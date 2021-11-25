@@ -23,3 +23,46 @@ button
 img 
     width: 100%
     height: auto
+
+.title
+    position: relative
+    &::before
+        content: ""
+        position: absolute
+    &.red-15
+        &::before
+            top: 0
+            left: -15px
+            width: 15px
+            height: 15px
+            background-image: url("../images/red-15.svg")
+    &.red-30
+        &::before
+            top: -15px
+            left: -30px
+            width: 30px
+            height: 30px
+            background-image: url("../images/red-30.svg")
+    &.red-62
+        &::before
+            top: -15px
+            left: -62px
+            width: 62px
+            height: 62px
+            background-image: url("../images/red-62.svg")
+    &.red-68
+        &::before
+            top: -15px
+            left: -68px
+            width: 68px
+            height: 68px
+            background-image: url("../images/red-68.svg")
+    &.red-117
+        &::before
+            top: -15px
+            left: -117px
+            width: 117px
+            height: 117px
+            background-image: url("../images/red-117.svg")
+        
+        
