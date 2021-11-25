@@ -14,6 +14,15 @@ $(document).ready(function () {
   //   $(".header").removeClass("with-bg");
   // }
 
+  var windowWidth = $(window).width();
+
+  $('.hero').mousemove(function(event){
+    var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
+    var moveY = (($(window).height() / 2) - event.pageY) * 0.1;
+    $('.hero-bg').css('margin-left', moveX + 'px');
+    $('.hero-bg').css('margin-top', moveY + 'px');
+  });
+
   // get menu dropdown height
   var dropdownHeight = $('ul.dropdown').outerHeight()
   $('ul.dropdown').css('bottom', ('-' + dropdownHeight + 'px'))
