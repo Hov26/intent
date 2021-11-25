@@ -14,6 +14,51 @@ $(document).ready(function () {
   //   $(".header").removeClass("with-bg");
   // }
 
+  $(".home-carousel").owlCarousel({
+    dots: true,
+    nav: false,
+    navElement: "div",
+    items: 3,
+    // loop: true,
+    margin: 0,
+    autoplay: false,
+    // autoplayTimeout: 1000,
+    // smartSpeed: 100,
+    // animateOut: "fadeOut",
+    responsive: {
+      0: {
+        items: 1,
+        margin: 24,
+      },
+      700: {
+        items: 2,
+        margin: 30
+      },
+      // 550: {
+      //   items: 2,
+      //   margin: 20,
+      // },
+      // 850: {
+      //   items: 3,
+      //   margin: 30,
+      // },
+      1000: {
+        items: 3,
+        margin: 60,
+      },
+      1400: {
+        margin: 128,
+      },
+      1920: {
+        margin: 160,
+      },
+    },
+  });
+
+  var arrows = $('.owl-nav')
+
+  $('.for-arrows').append(arrows)
+
   $('.hero').mousemove(function(event){
     var moveX = (($(window).width() / 2) - event.pageX) * 0.01;
     var moveY = (($(window).height() / 2) - event.pageY) * 0.01;
