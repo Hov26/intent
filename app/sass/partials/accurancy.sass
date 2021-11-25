@@ -9,16 +9,21 @@
         gap: 30px
         flex-wrap: wrap
     .card
-        padding: 20px 20px 14px 20px
         width: 33%
         max-width: 480px
         border: 1px solid $gray500
         border-radius: 16px
+    .card-content-wrapper
+        padding: 20px 20px 14px 20px
+        display: flex
+        flex-direction: column
+        align-items: space-between
     .card-top
         display: flex
         justify-content: space-between
         align-items: flex-end
         gap: 15px
+        margin-bottom: 15px
     .card-accurancy
         display: flex
         flex-direction: column
@@ -33,14 +38,10 @@
         .cards
             gap: 28px
         .card
-            width: 31%
+            width: 33%
+            max-width: 372px
         .card-top
             align-items: flex-start
-        .card-content-wrapper
-            display: flex
-            flex-direction: column
-        .card-bottom
-            margin-top: auto
 @media screen and ( max-width: 1440px )
     .accurancy
         .card
