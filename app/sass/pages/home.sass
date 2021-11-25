@@ -52,6 +52,7 @@
 
 .marketes
     position: relative
+    border: 1px solid red
     .marketes-bg
         height: 520px
         position: absolute
@@ -76,9 +77,10 @@
         max-width: 608px
         display: flex
         flex-direction: column
-        &:hover
+        width: 45%
+        flex-grow: 1
+        &:last-child
             background-color: $gray100
-            transition: 1s ease 
     .card-top
         width: 68px
         position: absolute
@@ -88,13 +90,14 @@
          max-width: 420px
     .card-subtitle
         margin-bottom: 46px
+    .card-descr
+        &:last-child
+            margin-bottom: 230px
     .btn
         width: 100%
         max-width: 400px
-        margin: 0 auto
-        margin-top: auto 
         display: block
-        margin-top: 230px
+        margin: auto auto 0 auto
     
 
 @media screen and (max-width: 1440px)
@@ -119,7 +122,7 @@
         .title
             margin-bottom: 75px
         .card
-            padding: 57px 72px 43px 60px
+            padding: 60px 60px 42px 60px
             max-width: 500px
 
 @media screen and ( max-width: 1180px )
@@ -129,7 +132,6 @@
             max-width: 600px
             margin: 0 auto
         .title
-            font-size: 32px
             margin-bottom: 35px
             margin-left: 15px
         .cards
@@ -143,35 +145,49 @@
             margin-bottom: 6px
 
     .marketes
-        .marketes-bg
-            display: none
         .container
             width: 100%
             padding: 117px 20px
             margin: 0 auto
         .title
-            margin-left: 15px
+            margin-left: 25px
             margin-bottom: 50px
-            font-size: 32px
+            &::before
+                left: -25px
         .card-title
             font-size: 32px
         .card-subtitle
             font-size: 32px
             margin-bottom: 20px
+        .btn
+            padding: 0 30px
         .card-descr
             font-size: 12px
-        .cards
-            flex-direction: column
-            align-items: center
-            gap: 40px
-        .btn
-            margin-top: 90px
-            padding: 0 30px
+            &:last-child
+                margin-bottom: 70px
+
 @media screen and (max-width: 992px)
+    .title
+        font-size: 32px
     .hero
         .container
             padding: 0 20px 0 40px
-        .title
-            font-size: 32px
             div
                 display: inline
+    .marketes
+        .marketes-bg
+            display: none
+        .card-top
+            width: 50px
+        .card
+            padding: 60px 40px 40px 40px
+            min-height: 500px
+        
+
+@media screen and (max-width: 767px)
+    .marketes
+        .cards
+            flex-direction: column
+            align-items: center
+        .card
+            width: 100%
