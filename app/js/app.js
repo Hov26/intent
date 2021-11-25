@@ -14,15 +14,24 @@ $(document).ready(function () {
   //   $(".header").removeClass("with-bg");
   // }
 
-  // Open mobile menu
-  // $(".burger").click(function () {
-  //   $(".mobile-menu").addClass("opened");
-  //   $("body").addClass("scroll-off");
-  // });
+  // get menu dropdown height
+  var dropdownHeight = $('ul.dropdown').outerHeight()
+  $('ul.dropdown').css('bottom', ('-' + dropdownHeight + 'px'))
 
+  // Open mobile menu
+  $(".burger").click(function () {
+    $(".nav").addClass("opened");
+    $(".burger").addClass("hide");
+    $(".close-menu-btn").removeClass("hide");
+    $("body").addClass("scroll-off");
+  });
+  
   // Close mobile menu
-  // $(".close-btn").click(function () {
-  //   $(".mobile-menu").removeClass("opened");
-  //   $("body").removeClass("scroll-off");
-  // });
+  $(".close-menu-btn").click(function () {
+    $(".nav").removeClass("opened");
+    $(".burger").removeClass("hide");
+    $(".close-menu-btn").addClass("hide");
+    $("body").removeClass("scroll-off");
+  });
+
 });
