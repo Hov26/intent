@@ -14,8 +14,6 @@ $(document).ready(function () {
   //   $(".header").removeClass("with-bg");
   // }
 
-  var windowWidth = $(window).width();
-
   $('.hero').mousemove(function(event){
     var moveX = (($(window).width() / 2) - event.pageX) * 0.01;
     var moveY = (($(window).height() / 2) - event.pageY) * 0.01;
