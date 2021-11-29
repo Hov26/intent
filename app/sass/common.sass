@@ -26,16 +26,24 @@ img
 
 .title
     position: relative
-    &::before
+    &::before, &::after
         content: ""
         position: absolute
     &.red-15
         &::before
-            top: 0
+            top: -5px
             left: -15px
             width: 15px
             height: 15px
             background-image: url("../images/red-15.svg")
+    &.red-15-bottom-right
+        &::after
+            bottom: -10px
+            right: -20px
+            width: 15px
+            height: 15px
+            background-image: url("../images/red-15.svg")
+            transform: rotate(180deg)
     &.red-30
         &::before
             top: -15px
