@@ -111,8 +111,44 @@
         max-width: 400px
         display: block
         margin: auto auto 0 auto
-    
+.privacy
+    padding: 135px 0 160px 0 
+    .title-wrapper
+        margin: 0 0 85px 72px
+    .privacy-ul
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 80px
+    .privacy-li
+        display: flex
+        align-items: center
+        gap: 40px
+        width: 47%
+    .privacy-content
+        max-width: 472px
+    .content-title
+        margin-bottom: 5px 
+    .privacy-img
+        width: 96px  
+.patented
+    padding: 80px 0
+    position: relative
+    .ill
+        position: absolute
+        left: 0
+        top: 0
+        width: 220px
+    .container
+        display: flex
+        justify-content: space-between
+        // .title
+        //     margin-left: 220px
+        // .btn
+        //     width: 228px
+        //     padding: 0 65px
 
+                
 @media screen and (max-width: 1440px)
     .hero
         .container
@@ -138,11 +174,23 @@
             padding: 60px 60px 42px 60px
             max-width: 500px
 
-@media screen and ( max-width: 1685px )
-    .patanted
+    
+    .privacy
+        padding: 110px 0 185px 0
         .container
-            justify-content: center
-            gap: 182px
+            max-width: 1072px
+        .privacy-li
+            grid-gap: 35px
+            width: 45%
+        .privacy-content
+            max-width: 364px
+        .privacy-img
+            width: 72px  
+    // .patented
+    //     .container
+    //         max-width: 1072px
+    //         .title
+    //             margin-left: 150px
 
 @media screen and ( max-width: 1180px )
     .accurancy
@@ -210,6 +258,21 @@
             text-align: center
             max-width: min-content
         
+    .privacy
+        padding: 66px 0 80px 0
+        .title-wrapper
+            margin: 0 0 30px 15px
+        .privacy-content
+            max-width: 500px
+        .privacy-ul
+            flex-direction: column
+            align-items: center
+            gap: 24px
+        .privacy-li
+            gap: 35px
+            align-items: flex-start
+            width: 100%
+            max-width: 600px
 
 @media screen and (max-width: 767px)
     .marketes
@@ -218,3 +281,9 @@
             align-items: center
         .card
             width: 100%
+    .privacy
+        .title-wrapper
+            max-width: 335px
+            .title
+                max-width: 290px
+                margin-right: 30px
