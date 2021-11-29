@@ -50,7 +50,7 @@
         .percent
             line-height: 35px
 
-.patanted
+.patented
     padding: 80px 0
     position: relative
     .ill
@@ -131,22 +131,26 @@
         margin-bottom: 5px 
     .privacy-img
         width: 96px  
+
 .patented
     padding: 80px 0
     position: relative
     .ill
         position: absolute
+        width: 220px
         left: 0
         top: 0
-        width: 220px
     .container
         display: flex
         justify-content: space-between
-        // .title
-        //     margin-left: 220px
-        // .btn
-        //     width: 228px
-        //     padding: 0 65px
+        align-items: center
+        max-width: 1200px
+
+@media screen and ( max-width: 1685px )
+    .patented
+        .container
+            justify-content: center
+            gap: 182px
 
                 
 @media screen and (max-width: 1440px)
@@ -175,22 +179,17 @@
             max-width: 500px
 
     
-    .privacy
-        padding: 110px 0 185px 0
-        .container
-            max-width: 1072px
-        .privacy-li
-            grid-gap: 35px
-            width: 45%
-        .privacy-content
-            max-width: 364px
-        .privacy-img
-            width: 72px  
-    // .patented
+    // .privacy
+    //     padding: 110px 0 185px 0
     //     .container
     //         max-width: 1072px
-    //         .title
-    //             margin-left: 150px
+    //     .privacy-li
+    //         grid-gap: 35px
+    //         width: 45%
+    //     .privacy-content
+    //         max-width: 364px
+    //     .privacy-img
+    //         width: 72px  
 
 @media screen and ( max-width: 1180px )
     .accurancy
@@ -233,6 +232,15 @@
             &:last-child
                 margin-bottom: 70px
 
+    .patented
+        .container
+            flex-direction: column
+            gap: 58px
+        .title
+            font-size: 44px
+            text-align: center
+            max-width: min-content
+
 @media screen and (max-width: 992px)
     .title
         font-size: 32px
@@ -249,7 +257,7 @@
         .card
             padding: 60px 40px 40px 40px
             min-height: 500px
-    .patanted
+    .patented
         .container
             flex-direction: column
             gap: 58px
@@ -258,21 +266,21 @@
             text-align: center
             max-width: min-content
         
-    .privacy
-        padding: 66px 0 80px 0
-        .title-wrapper
-            margin: 0 0 30px 15px
-        .privacy-content
-            max-width: 500px
-        .privacy-ul
-            flex-direction: column
-            align-items: center
-            gap: 24px
-        .privacy-li
-            gap: 35px
-            align-items: flex-start
-            width: 100%
-            max-width: 600px
+    // .privacy
+    //     padding: 66px 0 80px 0
+    //     .title-wrapper
+    //         margin: 0 0 30px 15px
+    //     .privacy-content
+    //         max-width: 500px
+    //     .privacy-ul
+    //         flex-direction: column
+    //         align-items: center
+    //         gap: 24px
+    //     .privacy-li
+    //         gap: 35px
+    //         align-items: flex-start
+    //         width: 100%
+    //         max-width: 600px
 
 @media screen and (max-width: 767px)
     .marketes
