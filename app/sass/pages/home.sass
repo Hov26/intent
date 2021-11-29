@@ -141,48 +141,112 @@
         width: 220px
         left: 0
         top: 0
+    .right-bg
+        position: absolute
+        top: 0
+        right: 9px
+        width: 100%
+        max-width: 638px
     .container
         display: flex
         justify-content: space-between
         align-items: center
         max-width: 1200px
 
-.subscribe
+.subscriber
     padding: 50px 0 90px 0
-    .title
-        margin-bottom: 10px
     .subtitle
         max-width: 1028px
         line-height: 1.2
-        margin-bottom: 80px
-    .cards-wrapper
-        .cards
-            display: flex
-            align-items: center
-            justify-content: center
+        margin: 10px 0 80px 0
+    .cards
+        display: flex
+        align-items: center
+        gap: 32px
     .cards-logo
-        max-width: 98px
-    .cards-li
-        width: 352px
-        border-radius: 20px
-        .content-wrapper
-            max-width: 223px
-            padding: 21px 0 23px 25px
-            line-height: 1.2
-    .cards-li.bg-black
-        padding: 35px 80px 55px 80px
-    .cards-li.bg-grayLight
-        padding: 28px 32px 45px 32px
-    .cards-logo
-        text-align: center
-    .subscribers
+        width: 98px
+        display: inline-block
+        margin: 0 auto 40px auto
+    .card
+        width: 100%
+        max-width: 352px
+        display: flex
+        flex-direction: column
+        &:nth-child(1)
+            padding: 20px 100px 20px 25px
+            border-radius: 20px
+            .cards-title
+                margin-bottom: 10px
+        &:nth-child(2)
+            padding: 35px 80px 56px 80px
+            border-radius: 24px
+            .cards-title
+                margin-bottom: 36px
+        &:nth-child(3)
+            margin-left: auto
+            padding: 28px 84px 42px 32px
+            border-radius: 20px
+            .cards-title
+                margin-bottom: 24px
+            .marketes-li
+                margin-left: 20px
+                &:not(:last-child)
+                    margin-bottom: 32px 
+    .content
+        line-height: 1.2
+    .profiles-wrap
         display: flex    
         flex-wrap: wrap
         justify-content: center
-        .sub-item
-            width: 33%
-        .subscriber-icon
-            width: 40px
+        gap: 36px
+    .profile-item
+        width: 40px
+        height: 40px
+
+@media screen and (max-width: 1100px)
+    .subscriber 
+        .cards-logo
+            width: 133px
+        .cards
+            gap: 16px
+        .card
+            &:nth-child(1)
+                max-width: 233px
+                padding: 24px 16px
+                .cards-title
+            &:nth-child(2)
+                max-width: 272px
+                padding: 40px 52px 56px 52px
+                .cards-title
+            &:nth-child(3)
+                max-width: 272px
+        .profiles-wrap
+            gap: 24px
+
+@media screen and (max-width: 1000px)
+    .subscriber 
+        .cards-logo
+        .cards
+            flex-direction: column
+        .card
+            &:nth-child(1), &:nth-child(2), &:nth-child(3)
+                max-width: 272px
+                padding: 30px
+            &:nth-child(1)
+                margin-bottom: 40px
+                .cards-title
+            &:nth-child(2)
+                margin-bottom: 234px
+                padding: 40px 52px 56px 40px
+                .cards-title
+                    margin-bottom: 26px
+                    margin-left: 8px
+            &:nth-child(3)
+                margin-left: initial
+            .title
+                font-size: 22px
+                max-width: 168px
+
 
 @media screen and ( max-width: 1685px )
     .patented
@@ -270,6 +334,8 @@
                 margin-bottom: 70px
 
     .patented
+        .right-bg
+            display: none
         .container
             flex-direction: column
             gap: 58px
