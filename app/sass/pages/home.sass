@@ -203,7 +203,7 @@
         width: 40px
         height: 40px
 
-@media screen and (max-width: 1100px)
+@media only screen and (max-width: 1100px)
     .subscriber 
         .cards-logo
             width: 133px
@@ -223,7 +223,7 @@
         .profiles-wrap
             gap: 24px
 
-@media screen and (max-width: 1000px)
+@media only screen and (max-width: 1000px)
     .subscriber 
         .cards-logo
         .cards
@@ -248,14 +248,14 @@
                 max-width: 168px
 
 
-@media screen and ( max-width: 1685px )
+@media only screen and (max-width: 1685px)
     .patented
         .container
             justify-content: center
             gap: 182px
 
                 
-@media screen and (max-width: 1440px)
+@media only screen and (max-width: 1440px)
     .hero
         .container
             max-width: 971px
@@ -292,7 +292,7 @@
         .privacy-img
             width: 72px  
 
-@media screen and ( max-width: 1180px )
+@media only screen and (max-width: 1180px)
     .accurancy
         padding: 70px 0 60px 0 
         .cards
@@ -344,7 +344,7 @@
             text-align: center
             max-width: min-content
 
-@media screen and (max-width: 992px)
+@media only screen and (max-width: 992px)
     .title
         font-size: 32px
     
@@ -362,15 +362,6 @@
         .card
             padding: 60px 40px 40px 40px
             min-height: 500px
-    
-    .patented
-        .container
-            flex-direction: column
-            gap: 58px
-        .title
-            font-size: 44px
-            text-align: center
-            max-width: min-content
 
     .privacy
         padding: 66px 0 80px 0
@@ -388,7 +379,13 @@
             width: 100%
             max-width: 600px
 
-@media screen and (max-width: 767px)
+@media only screen and (max-width: 767px)
+    .hero
+        background-image: url("../../images/hero-bg.png")
+        background-repeat: no-repeat
+        .hero-bg
+            display: none
+
     .marketes
         .cards
             flex-direction: column
@@ -397,13 +394,11 @@
             width: 100%
 
     .patented
-        background-image: url("../../images/patent-mobile-bg.png")
+        background-image: url("../../images/patent-mobile-bg.svg")
         background-size: contain
         .ill
             display: none
         
-
-    
     .privacy
         .title
             margin-right: 30px
