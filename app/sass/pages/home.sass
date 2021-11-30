@@ -207,7 +207,8 @@
             margin-left: auto
             padding: 28px 84px 42px 32px
             border-radius: 20px
-            background-color: $grayLight
+            background-color: $white
+            border: 1px solid $grayLight
             .cards-title
                 margin-bottom: 24px
             .marketes-li
@@ -246,7 +247,7 @@
                 max-width: 272px
         .profiles-wrap
             gap: 24px
-
+                
 @media only screen and (max-width: 1510px)
     .subscriber
         .card
@@ -258,81 +259,13 @@
                 padding: 40px 22px 56px 23px
                 .cards-title
                     width: 80%
-                    margin: 0 auto 14px auto
+                    margin: 0 auto 24px auto
             &.card-3
                 padding: 28px 24px 42px 24px
         .mid-img
             width: 17%
         .right-img
             width: 8%
-
-@media only screen and (max-width: 1180px)
-    .subscriber 
-        .hidden-lg
-            display: block
-        .left-img, .mid-img, .right-img
-            display: none
-        .left-mobile
-            width: 258px
-            height: 450px
-            object-fit: contain
-        .mid-mobile
-            transform: scale(1.3)
-            position: relative
-            z-index: -1
-        .right-mobile
-            margin-left: -10vw
-        .cards
-            flex-direction: column
-            position: relative
-            overflow: hidden
-            &::after 
-                content: ""
-                width: 100%
-                height: 140px
-                display: block
-                background-image: linear-gradient(to bottom, transparent, $white)
-                position: absolute
-                bottom: -4px
-                left: 0
-        .card-1-wrapper
-            width: 100%
-            position: relative
-            &::after 
-                content: ""
-                width: 100%
-                height: 40%
-                display: block
-                background-image: linear-gradient(to bottom, $white, transparent)
-                position: absolute
-                top: 0
-                left: 0
-        .card
-            &.card-1, &.card-2, &.card-3
-                width: 100%
-            &.card-1
-                width: 100%
-                left: 50%
-                bottom: 40px
-                transform: translateX(-50%)
-                max-width: 380px
-                padding: 20px
-                .cards-title
-            &.card-2
-                max-width: 380px
-                .cards-title
-            &.card-3
-                margin-left: initial
-                min-width: 272px
-                max-width: 380px
-                padding: 24px 30px
-            .title
-        .profiles-wrap 
-            gap: initial
-            grid-column-gap: 60px
-            grid-row-gap: 30px
-                
-
 
 @media only screen and (max-width: 1685px)
     .patented
@@ -430,6 +363,71 @@
             text-align: center
             max-width: min-content
 
+    .subscriber 
+        .hidden-lg
+            display: block
+        .left-img, .mid-img, .right-img
+            display: none
+        .left-mobile
+            width: 258px
+            height: 450px
+            object-fit: contain
+        .mid-mobile
+            transform: scale(1.3)
+            position: relative
+            z-index: -1
+        .right-mobile
+            margin-left: -10vw
+        .cards
+            flex-direction: column
+            position: relative
+            overflow: hidden
+            &::after 
+                content: ""
+                width: 100%
+                height: 140px
+                display: block
+                background-image: linear-gradient(to bottom, transparent, $white)
+                position: absolute
+                bottom: -4px
+                left: 0
+        .card-1-wrapper
+            width: 100%
+            position: relative
+            &::after 
+                content: ""
+                width: 100%
+                height: 40%
+                display: block
+                background-image: linear-gradient(to bottom, $white, transparent)
+                position: absolute
+                top: 0
+                left: 0
+        .card
+            &.card-1, &.card-2, &.card-3
+                width: 100%
+            &.card-1
+                width: 100%
+                left: 50%
+                bottom: 40px
+                transform: translateX(-50%)
+                max-width: 380px
+                padding: 20px
+                .cards-title
+            &.card-2
+                max-width: 380px
+                .cards-title
+            &.card-3
+                margin-left: initial
+                min-width: 272px
+                max-width: 380px
+                padding: 24px 30px
+            .title
+        .profiles-wrap 
+            gap: initial
+            grid-column-gap: 60px
+            grid-row-gap: 30px
+
 @media only screen and (max-width: 992px)
     .title
         font-size: 32px
@@ -467,8 +465,9 @@
 
 @media only screen and (max-width: 767px)
     .hero
-        background-image: url("../../images/hero-bg.png")
+        background-image: url("../../images/hero-mobile-bg.svg")
         background-repeat: no-repeat
+        background-position: center
         .hero-bg
             display: none
 
@@ -489,3 +488,25 @@
         .title
             margin-right: 30px
             padding-left: 12px
+
+
+@media only screen and (max-width: 450px)
+    .hero
+        background-position: initial
+
+    .subscriber
+        .cards
+            padding: 0 40px
+        .card
+            &.card-2
+                padding: 40px 52px 56px 52px
+                .title
+                    font-size: 22px
+            &.card-3
+                .title
+                    font-size: 22px
+        
+        .profiles-wrap
+            grid-column-gap: initial
+            grid-row-gap: initial
+            gap: 24px
