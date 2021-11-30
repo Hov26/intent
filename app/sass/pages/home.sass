@@ -155,43 +155,71 @@
 
 .subscriber
     padding: 50px 0 90px 0
+    .hidden-lg
+        display: none
     .subtitle
         max-width: 1028px
         line-height: 1.2
         margin: 10px 0 80px 0
+    .cards-container
+        width: 100%
+        display: flex
     .cards
+        width: 100%
         display: flex
         align-items: center
-        gap: 32px
     .cards-logo
         width: 98px
         display: inline-block
         margin: 0 auto 40px auto
+    .card-1-wrapper
+        width: 32%
+        flex-grow: 1
+        position: relative
+        img
+            width: 100%
     .card
         width: 100%
         max-width: 352px
         display: flex
         flex-direction: column
-        &:nth-child(1)
+        &.card-1
+            min-width: 272px
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 32px
             padding: 20px 100px 20px 25px
             border-radius: 20px
+            background-color: rgba($white, 0.85)
             .cards-title
                 margin-bottom: 10px
-        &:nth-child(2)
-            padding: 35px 80px 56px 80px
+        &.card-2
+            width: 19%
+            min-width: 325px
+            flex-grow: 1
+            padding: 35px 65px 56px 65px
             border-radius: 24px
             .cards-title
                 margin-bottom: 36px
-        &:nth-child(3)
+        &.card-3
+            width: 21.7%
             margin-left: auto
             padding: 28px 84px 42px 32px
             border-radius: 20px
+            background-color: $grayLight
             .cards-title
                 margin-bottom: 24px
             .marketes-li
                 margin-left: 20px
                 &:not(:last-child)
                     margin-bottom: 32px 
+    .mid-img
+        width: 21.7%
+        flex-grow: 1
+    .right-img
+        width: 10.8%
+        flex-grow: 1
     .content
         line-height: 1.2
     .profiles-wrap
@@ -199,53 +227,111 @@
         flex-wrap: wrap
         justify-content: center
         gap: 36px
-    .profile-item
+    .user-icon
         width: 40px
         height: 40px
 
-@media only screen and (max-width: 1100px)
+@media only screen and (max-width: 1510px)
     .subscriber 
         .cards-logo
             width: 133px
-        .cards
-            gap: 16px
         .card
             &:nth-child(1)
                 max-width: 233px
                 padding: 24px 16px
-                .cards-title
             &:nth-child(2)
                 max-width: 272px
                 padding: 40px 52px 56px 52px
-                .cards-title
             &:nth-child(3)
                 max-width: 272px
         .profiles-wrap
             gap: 24px
 
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1510px)
+    .subscriber
+        .card
+            &.card-1
+                padding: 40px 20px 56px 20px
+                .cards-title
+            &.card-2
+                min-width: 272px
+                padding: 40px 22px 56px 23px
+                .cards-title
+                    width: 80%
+                    margin: 0 auto 14px auto
+            &.card-3
+                padding: 28px 24px 42px 24px
+        .mid-img
+            width: 17%
+        .right-img
+            width: 8%
+
+@media only screen and (max-width: 1180px)
     .subscriber 
-        .cards-logo
+        .hidden-lg
+            display: block
+        .left-img, .mid-img, .right-img
+            display: none
+        .left-mobile
+            width: 258px
+            height: 450px
+            object-fit: contain
+        .mid-mobile
+            transform: scale(1.3)
+            position: relative
+            z-index: -1
+        .right-mobile
+            margin-left: -10vw
         .cards
             flex-direction: column
+            position: relative
+            overflow: hidden
+            &::after 
+                content: ""
+                width: 100%
+                height: 140px
+                display: block
+                background-image: linear-gradient(to bottom, transparent, $white)
+                position: absolute
+                bottom: -4px
+                left: 0
+        .card-1-wrapper
+            width: 100%
+            position: relative
+            &::after 
+                content: ""
+                width: 100%
+                height: 40%
+                display: block
+                background-image: linear-gradient(to bottom, $white, transparent)
+                position: absolute
+                top: 0
+                left: 0
         .card
-            &:nth-child(1), &:nth-child(2), &:nth-child(3)
-                max-width: 272px
-                padding: 30px
-            &:nth-child(1)
-                margin-bottom: 40px
+            &.card-1, &.card-2, &.card-3
+                width: 100%
+            &.card-1
+                width: 100%
+                left: 50%
+                bottom: 40px
+                transform: translateX(-50%)
+                max-width: 380px
+                padding: 20px
                 .cards-title
-            &:nth-child(2)
-                margin-bottom: 234px
-                padding: 40px 52px 56px 40px
+            &.card-2
+                max-width: 380px
                 .cards-title
-                    margin-bottom: 26px
-                    margin-left: 8px
-            &:nth-child(3)
+            &.card-3
                 margin-left: initial
+                min-width: 272px
+                max-width: 380px
+                padding: 24px 30px
             .title
-                font-size: 22px
-                max-width: 168px
+        .profiles-wrap 
+            gap: initial
+            grid-column-gap: 60px
+            grid-row-gap: 30px
+                
 
 
 @media only screen and (max-width: 1685px)
