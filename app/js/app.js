@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
   // $(window).scroll(function () {
   //   if ($(this).scrollTop() > 10) {
   //     $(".header").addClass("with-bg");
@@ -19,12 +18,8 @@ $(document).ready(function () {
     nav: false,
     navElement: "div",
     items: 3,
-    // loop: true,
     margin: 0,
     autoplay: false,
-    // autoplayTimeout: 1000,
-    // smartSpeed: 100,
-    // animateOut: "fadeOut",
     responsive: {
       0: {
         items: 1,
@@ -32,16 +27,8 @@ $(document).ready(function () {
       },
       700: {
         items: 2,
-        margin: 30
+        margin: 30,
       },
-      // 550: {
-      //   items: 2,
-      //   margin: 20,
-      // },
-      // 850: {
-      //   items: 3,
-      //   margin: 30,
-      // },
       1000: {
         items: 3,
         margin: 60,
@@ -55,20 +42,20 @@ $(document).ready(function () {
     },
   });
 
-  var arrows = $('.owl-nav')
+  var arrows = $(".owl-nav");
 
-  $('.for-arrows').append(arrows)
+  $(".for-arrows").append(arrows);
 
-  $('.hero').mousemove(function(event){
-    var moveX = (($(window).width() / 2) - event.pageX) * 0.01;
-    var moveY = (($(window).height() / 2) - event.pageY) * 0.01;
-    $('.hero-bg').css('margin-left', moveX + 'px');
-    $('.hero-bg').css('margin-top', moveY + 'px');
+  $(".hero").mousemove(function (event) {
+    var moveX = ($(window).width() / 2 - event.pageX) * 0.01;
+    var moveY = ($(window).height() / 2 - event.pageY) * 0.01;
+    $(".hero-bg").css("margin-left", moveX + "px");
+    $(".hero-bg").css("margin-top", moveY + "px");
   });
 
   // get menu dropdown height
-  var dropdownHeight = $('ul.dropdown').outerHeight()
-  $('ul.dropdown').css('bottom', ('-' + dropdownHeight + 'px'))
+  var dropdownHeight = $("ul.dropdown").outerHeight();
+  $("ul.dropdown").css("bottom", "-" + dropdownHeight + "px");
 
   // Open mobile menu
   $(".burger").click(function () {
@@ -77,7 +64,7 @@ $(document).ready(function () {
     $(".close-menu-btn").removeClass("hide");
     $("body").addClass("scroll-off");
   });
-  
+
   // Close mobile menu
   $(".close-menu-btn").click(function () {
     $(".nav").removeClass("opened");
@@ -86,4 +73,13 @@ $(document).ready(function () {
     $("body").removeClass("scroll-off");
   });
 
+  if ($(window).width() < 992) {
+    $(".dropdown-title").click(function () {
+      if ($(".dropdown").hasClass("opened")) {
+        $(".dropdown").removeClass("opened");
+      } else {
+        $(".dropdown").addClass("opened");
+      }
+    });
+  }
 });
