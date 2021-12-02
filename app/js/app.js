@@ -1,17 +1,17 @@
 $(document).ready(function () {
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 10) {
-  //     $(".header").addClass("with-bg");
-  //   } else {
-  //     $(".header").removeClass("with-bg");
-  //   }
-  // });
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 10) {
+      $(".header").addClass("with-bg");
+    } else {
+      $(".header").removeClass("with-bg");
+    }
+  });
 
-  // if ($(window).scrollTop() > 1) {
-  //   $(".header").addClass("with-bg");
-  // } else {
-  //   $(".header").removeClass("with-bg");
-  // }
+  if ($(window).scrollTop() > 1) {
+    $(".header").addClass("with-bg");
+  } else {
+    $(".header").removeClass("with-bg");
+  }
 
   $(".home-carousel").owlCarousel({
     dots: true,
@@ -56,6 +56,10 @@ $(document).ready(function () {
   // get menu dropdown height
   var dropdownHeight = $("ul.dropdown").outerHeight();
   $("ul.dropdown").css("bottom", "-" + dropdownHeight + "px");
+
+  $(window).resize(function () {
+    $("ul.dropdown").css("bottom", "-" + dropdownHeight + "px");
+  });
 
   // Open mobile menu
   $(".burger").click(function () {
