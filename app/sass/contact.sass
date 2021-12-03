@@ -1,11 +1,26 @@
 .contact-page
     .hero
-        background-color: $gray100
         min-height: 360px
-        display: flex
-        align-items: center
-        
+        padding: 50px 0 50px 0
+        .container
+            max-width: 1440px
+@media only screen and (max-width: 1440px)
+        .contact-page
+            .hero
+                .container
+                    max-width: 1110px    
+@media only screen and (max-width: 1180px)
+        .contact-page
+            .hero
+                .container
+                    padding: 50px 20px 50px 30px
+                    .title 
+                        font-size: 32px                   
+@media only screen and (max-width: 768px)
+    .contact-page
+            .hero
+                align-items: flex-start
 
 
-    .advisors
-        color: red 
+
+    
