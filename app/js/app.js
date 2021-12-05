@@ -7,6 +7,17 @@ $(document).ready(function () {
     }
   });
 
+  //bondo
+  $(".job-card").click(function () {
+    if ($(this).hasClass("opened")) {
+      $(this).removeClass("opened");
+    } else {
+      $(this).addClass("opened");
+    }
+  });
+
+
+
   if ($(window).scrollTop() > 1) {
     $(".header").addClass("with-bg");
   } else {
