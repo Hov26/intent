@@ -4,24 +4,7 @@
         padding: 50px 0 50px 0
         .container
             max-width: 1440px
-@media only screen and (max-width: 1440px)
-    .contact-page
-        .hero
-            .container
-                max-width: 1110px    
-@media only screen and (max-width: 1180px)
-    .contact-page
-        .hero
-            .container
-                padding: 50px 20px 50px 30px                                 
-@media only screen and (max-width: 768px)
-    .contact-page
-        .hero
-            align-items: flex-start
-            .title
-                font-size: 32px 
 
-.contact-page    
     .advisors
         padding: 100px 0 190px 0
         .container
@@ -40,41 +23,7 @@
                 padding: 0 128px
                 .title
                     margin: 30px 0 60px 0
-@media only screen and (max-width: 1440px)
-    .contact-page    
-        .advisors
-            .container
-                max-width: 1170px
-@media only screen and (max-width: 992px)
-    .contact-page    
-        .advisors
-            .text
-                .title
-                    font-size: 40px
-            .contact-info-wrapper
-                .link
-                    font-size: 40px
-@media only screen and (max-width: 768px) 
-    .contact-page
-        .advisors
-            padding: 75px 0 70px 0
-            .container
-                .text
-                    padding: 0 20px
-                    .title
-                        font-size: 32px
-                    .paragraph
-                        margin: -20px
-                .contact-info-wrapper
-                    flex-direction: column
-                    gap: 25px
-                    .contact-info
-                        max-width: 600px
-                        padding: 30px 15px 30px 25px
-                        .link
-                            font-size: 36px  
 
-.contact-page
     .questions 
         min-height: 360px
         .question-container
@@ -96,14 +45,32 @@
                     margin-top: 16px
                     width: 100%
                     max-width: 340px
+
+
+
+
 @media only screen and (max-width: 1440px)
     .contact-page
+        .hero
+            .container
+                max-width: 1110px 
+
+        .advisors
+            .container
+                max-width: 1170px
+        
         .questions 
             .question-container
                 .question
                     max-width: 770px
+
+
+
 @media only screen and (max-width: 1180px)
     .contact-page
+        .hero
+            .container
+                padding: 50px 20px 50px 30px   
         .questions 
             .question-container      
                 .question
@@ -115,14 +82,47 @@
             .form-container
                 .form
                     padding-left: 30px 
+
 @media only screen and (max-width: 992px)
-    .contact-page
+    .contact-page    
+        .advisors
+            .text
+                .title
+                    font-size: 40px
+            .contact-info-wrapper
+                .link
+                    font-size: 40px  
         .questions
             .form-container
                 .form
-                    width: 90% 
+                    width: 90%   
+
 @media only screen and (max-width: 768px)
     .contact-page
+        .hero
+            align-items: flex-start
+            .title
+                font-size: 32px 
+
+        .advisors
+            padding: 75px 0 70px 0
+            .container
+                .text
+                    padding: 0 20px
+                    .title
+                        font-size: 32px
+                    .paragraph
+                        margin: -20px
+                .contact-info-wrapper
+                    flex-direction: column
+                    gap: 25px
+                    .contact-info
+                        max-width: 600px
+                        padding: 30px 15px 30px 25px
+                        .link
+                            font-size: 36px 
+        
         .questions
-            display: none
+            display: none 
+
                                          
