@@ -16,8 +16,6 @@ $(document).ready(function () {
     }
   });
 
-
-
   if ($(window).scrollTop() > 1) {
     $(".header").addClass("with-bg");
   } else {
@@ -57,7 +55,7 @@ $(document).ready(function () {
 
   $(".for-arrows").append(arrows);
 
-  $(".hero").mousemove(function (event) {
+  $(".hero-with-animation").mousemove(function (event) {
     var moveX = ($(window).width() / 2 - event.pageX) * 0.01;
     var moveY = ($(window).height() / 2 - event.pageY) * 0.01;
     $(".hero-bg").css("margin-left", moveX + "px");
