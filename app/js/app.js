@@ -63,12 +63,12 @@ $(document).ready(function () {
   });
 
   // get menu dropdown height
-  var dropdownHeight = $("ul.dropdown").outerHeight();
-  $("ul.dropdown").css("bottom", "-" + dropdownHeight + "px");
+  // var dropdownHeight = $("ul.dropdown").outerHeight();
+  // $("ul.dropdown").css("bottom", "-" + dropdownHeight + "px");
 
-  $(window).resize(function () {
-    $("ul.dropdown").css("bottom", "-" + dropdownHeight + "px");
-  });
+  // $(window).resize(function () {
+  //   $("ul.dropdown").css("bottom", "-" + dropdownHeight + "px");
+  // });
 
   // Open mobile menu
   $(".burger").click(function () {

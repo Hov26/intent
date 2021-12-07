@@ -34,9 +34,11 @@
         justify-content: space-between
         align-items: flex-start
         gap: 15px
-        margin-bottom: 15px
+    .card-bottom
+        margin-top: 20px
     .card-title
         line-height: 27px
+        margin-bottom: 6px
     .card-subtitle
         @media only screen and ( min-width: 2000px )
             font-size: 20px
@@ -46,6 +48,7 @@
         align-items: flex-end
         .percent
             line-height: 35px
+            margin-bottom: 10px
 
 .patented
     padding: 80px 0
@@ -69,7 +72,7 @@
     .marketes-bg
         height: 520px
         position: absolute
-        top: 56%
+        top: 77%
         transform: translateY(-50%)
         object-fit: cover
     .container
@@ -109,7 +112,7 @@
         margin-bottom: 46px
     .card-descr
         &:last-child
-            margin-bottom: 230px
+            margin-bottom: 76px
     .btn
         width: 100%
         max-width: 400px
@@ -117,7 +120,8 @@
         margin: auto auto 0 auto
 
 .partners
-    padding-bottom: 158px
+    padding: 20px 0 158px 0
+    overflow: hidden
     .title 
         width: 90%
         max-width: 1300px
@@ -183,6 +187,7 @@
 .subscriber
     padding: 90px 0 0 0
     overflow: hidden
+    background-color: $white
     .container
         margin: 0 0 0 206px
     .hidden-lg
@@ -190,7 +195,7 @@
     .subtitle
         max-width: 1028px
         line-height: 1.2
-        margin: 10px 0 80px 0
+        margin: 20px 0 80px 0
     .cards-container
         width: 100%
         display: flex
@@ -275,17 +280,16 @@
             justify-content: center
             gap: 182px
 
-@media only screen and (max-width: 1510px)
+@media only screen and (max-width: 1600px)
     .subscriber
         .cards-logo
             width: 133px
         .card
             &.card-1
                 padding: 40px 20px 40px 20px
-                .cards-title
             &.card-2
                 min-width: 272px
-                padding: 40px 22px 56px 23px
+                padding: 40px 41px 56px 41px
                 .cards-title
                     width: 80%
                     margin: 0 auto 24px auto
@@ -298,6 +302,16 @@
         .profiles-wrap
             gap: 24px
                 
+@media only screen and (max-width: 1350px)
+    .subscriber
+        .card
+            &.card-1
+                max-width: 280px
+        .container
+            margin: 0 0 0 14vw
+        .subtitle
+            max-width: 90%
+
 @media only screen and (max-width: 1440px)
     .hero
         .container
@@ -339,7 +353,7 @@
     .accurancy
         padding: 70px 0 60px 0 
         .cards
-            max-width: 600px
+            // max-width: 900px
             margin: 0 auto
         .title
             margin-bottom: 35px
@@ -347,11 +361,11 @@
         .cards
             gap: 15px
         .card
-            width: 100%
+            width: 45%
+            flex-grow: 1
             max-width: 100%
             padding: 15px 20px
         .card-top
-            gap: 0px
             margin-bottom: 6px
 
     .marketes
@@ -399,7 +413,7 @@
 
     .subscriber 
         .subtitle
-            margin: 10px 0 0 0
+            margin: 20px 0 40px 0
         .container
             margin-left: 5vw
         .hidden-lg
@@ -410,7 +424,7 @@
             width: 258px
             height: 450px
             object-fit: contain
-            transform: translateY(100px)
+            // transform: translateY(220px)
         .mid-mobile
             max-width: 826px
             position: relative
@@ -421,32 +435,32 @@
             flex-direction: column
             position: relative
             overflow: hidden
-            &::after 
-                content: ""
-                width: 100%
-                height: 800px
-                display: block
-                background-image: linear-gradient(to bottom, transparent, $white)
-                position: absolute
-                bottom: -4px
-                left: 0
+            // &::after 
+            //     content: ""
+            //     width: 100%
+            //     height: 800px
+            //     display: block
+            //     background-image: linear-gradient(to bottom, transparent, $white)
+            //     position: absolute
+            //     bottom: -4px
+            //     left: 0
         .card-1-wrapper
             width: 100%
             position: relative
-            &::after 
-                content: ""
-                width: 100%
-                height: 40%
-                display: block
-                background-image: linear-gradient(to bottom, $white, transparent)
-                position: absolute
-                top: 100px
-                left: 0
+            // &::after 
+            //     content: ""
+            //     width: 100%
+            //     height: 40%
+            //     display: block
+            //     background-image: linear-gradient(to bottom, $white, transparent)
+            //     position: absolute
+            //     top: 0
+            //     left: 0
         .card
-            &.card-1, &.card-2, &.card-3
+            &.card-2, &.card-3
                 width: 100%
-                position: relative
                 z-index: 2
+                position: relative
             &.card-1
                 width: 100%
                 left: 50%
@@ -455,7 +469,8 @@
                 transform: translateX(-50%)
                 max-width: 380px
                 padding: 20px
-                .cards-title
+                width: 100%
+                z-index: 2
             &.card-2
                 max-width: 380px
                 .cards-title
@@ -513,6 +528,27 @@
         .hero-bg
             display: none
 
+    .accurancy 
+        .cards
+            gap: 10px
+        .card
+            padding: 15px 10px
+            display: flex
+            &:not(:last-child) 
+                .card-top
+                    flex-direction: column
+                    flex-grow: 1
+                .card-subtitle
+                    // min-height: 60px
+                .card-title
+                    // min-height: 56px
+                .card-name
+                    // min-height: 160px
+        .card-accurancy
+            align-items: flex-start
+        .card-bottom
+            margin-top: 10px
+
     .marketes
         .cards
             flex-direction: column
@@ -554,6 +590,9 @@
             &.card-3
                 .title
                     font-size: 22px
+        
+        .left-mobile
+            height: 300px
         
         .profiles-wrap
             grid-column-gap: initial
