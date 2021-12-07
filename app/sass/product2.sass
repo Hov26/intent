@@ -1,0 +1,62 @@
+.product2
+    .product
+        padding: 80px 0 160px 0
+        .container
+            position: relative
+        .title
+            margin-bottom: 130px
+            margin-left: 20px
+        .content-wrapper
+            display: flex  
+        .content
+            display: flex
+            gap: 47px
+            align-items: center
+            width: 50%
+            flex-grow: 1
+        .content-descr
+            max-width: 360px
+        .content-img
+            width: 125px
+        .ensurance-fill
+            position: absolute
+            width: 290px
+            right: 220px
+            top: -80px
+
+@media screen and ( max-width: 1440px )
+    .product2
+        .product
+            .container
+                max-width: 1150px
+            .ensurance-fill
+                right: 100px
+@media screen and ( max-width: 1100px )
+    .product2
+        .product
+            padding: 38px 0 48px 0
+            .title
+                margin-bottom: 40px
+            .content-wrapper
+                flex-direction: column
+            .content
+                gap: 8px
+                margin-bottom: 40px
+                width: 100%
+                justify-content: center
+                align-items: flex-start
+            .ensurance-fill
+                width: 108px
+                left: 0
+                top: 0
+                z-index: -1
+@media screen and ( max-width: 570px )
+    .product2    
+        .product
+            .content-img
+                width: 108px
+            .content-descr
+                max-width: 222px
+                font-size: 20px
+    
+       

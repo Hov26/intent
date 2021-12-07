@@ -1,0 +1,65 @@
+.careers
+    .hero
+        position: relative
+        .container
+            display: flex
+            align-items: center
+            margin-left: auto
+            gap: 128px
+        .left-side
+            width: 100%
+            max-width: 745px
+        .title
+            margin-bottom: 70px
+            margin-left: 25px
+        .subtitle
+            margin-bottom: 10px
+        .descr
+            line-height: 24px
+        .right-side
+            position: absolute
+            top: 0
+            right: 0
+            .team-img
+                width: 500px
+        
+.jobs
+    .container
+        flex-direction: column
+        display: flex
+        gap: 20px
+        padding: 80px 0 100px 0
+    .job-card
+        width: 100%
+        max-width: 1250px
+        padding: 24px 72px 24px 65px
+        border: 1px solid $gray300
+        border-radius: 16px
+        cursor: pointer
+        margin: 0 auto
+        &.opened 
+            .job-body
+                display: block
+            .job-header
+                &::before
+                    transform: rotate(225deg)
+                    transition: 500ms ease
+                //heighti harc@
+
+    .job-header
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            background-image: url("../images/red-15.svg")
+            width: 15px
+            height: 15px
+            top: 10px
+            left: -30px
+            transform: rotate(135deg)
+            transition: 500ms ease
+    .job-body
+        display: none
+        padding: 15px 0 37px 0
+        .body-content:not(:last-child)
+            margin-bottom: 30px
