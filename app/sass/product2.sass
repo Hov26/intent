@@ -1,4 +1,29 @@
 .product2
+    .unique
+        padding: 90px 0 107px 0
+        .title
+            margin: 0 0 77px 20px
+        .card-wrapper
+            display: flex
+            justify-content: space-between
+        .card
+            width: 30%
+            padding: 0 0 28px 0
+            display: flex
+            flex-direction: column
+        .card:not(:last-child)
+            border-right: 1px solid $gray800
+        .card-descr
+            max-width: 280px
+            margin-top: -60px
+            margin-bottom: 25px
+        .card-bottom
+            display: inline-block
+            width: 100px
+            height: 12px
+            margin-top: auto
+
+
     .product
         padding: 80px 0 160px 0
         .container
@@ -26,13 +51,25 @@
 
 @media screen and ( max-width: 1440px )
     .product2
+    .container
+        max-width: 1150px
         .product
-            .container
-                max-width: 1150px
             .ensurance-fill
                 right: 100px
 @media screen and ( max-width: 1100px )
     .product2
+        .unique
+            padding: 74px 0 68px 0
+            .title
+                margin-bottom: 35px
+            .card-wrapper
+                flex-direction: column
+            .card
+                width: 100%
+            .card:not(:last-child)
+                border-right: none
+                border-bottom: 1px solid $gray800
+
         .product
             padding: 38px 0 48px 0
             .title
@@ -51,7 +88,10 @@
                 top: 0
                 z-index: -1
 @media screen and ( max-width: 570px )
-    .product2    
+    .product2 
+        
+
+
         .product
             .content-img
                 width: 108px
