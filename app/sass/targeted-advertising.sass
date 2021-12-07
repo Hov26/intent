@@ -32,6 +32,13 @@
     .target
         padding: 85px 0
         position: relative
+        .squares-bg
+            position: absolute
+            top: 50%
+            left: -120px
+            transform: translateY(-50%)
+            width: 100%
+            max-width: 720px
         .product-container
             display: flex
             gap: 175px
@@ -46,10 +53,11 @@
             width: 600px
         .figure-container
             width: 38.4%
+            max-width: 608px
         .figure
             position: relative    
             width: 100%
-            padding-top: 110%
+            padding-top: 95%
         .section-title
             margin-bottom: 60px
             max-width: 560px
@@ -72,10 +80,11 @@
         .figure-container
             display: flex
             width: 49%
+            max-width: 736px
         .figure
             position: relative
             width: 100%
-            padding-top: 60%
+            padding-top: 68%
         .title.fz50
             margin-bottom: 60px
         .ensuring-ul
@@ -97,6 +106,9 @@
 @media screen and (max-width: 1440px)
     .product-page
         .target
+            .squares-bg
+                max-height: 400px
+                top: 46%
             .product-container
                 gap: 128px
                 .title.fz50
