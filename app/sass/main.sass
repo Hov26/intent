@@ -44,19 +44,6 @@
     .home-carousel
         .owl-dots
             display: none
-    .owl-nav
-        display: flex
-        justify-content: space-between
-        .owl-prev, .owl-next
-            width: 100px
-            height: 25px
-            background-repeat: no-repeat
-            background-position: center
-            cursor: pointer
-        .owl-prev
-            background-image: url("../images/arrow-left.svg")
-        .owl-next
-            background-image: url("../images/arrow-right.svg")
                 
     .item
         position: relative
@@ -81,6 +68,33 @@
         margin: 32px 0 8px 0
     .position
         margin-bottom: 24px
+
+
+
+.owl-nav
+    display: flex
+    justify-content: space-between
+    .owl-prev, .owl-next
+        width: 100px
+        height: 25px
+        background-repeat: no-repeat
+        background-position: center
+        cursor: pointer
+
+
+.testimonials
+    .owl-nav
+        .owl-prev
+            background-image: url("../images/arrow-left.svg")
+        .owl-next
+            background-image: url("../images/arrow-right.svg")
+
+.about-container
+    .owl-nav
+        .owl-prev
+            background-image: url("../images/arrow-left-black.svg")
+        .owl-next
+            background-image: url("../images/arrow-right-black.svg")
 
 @media only screen and (max-width: 1660px)
     .testimonials

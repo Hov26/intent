@@ -1,634 +1,642 @@
-.hero
-    min-height: 900px
-    display: flex
-    align-items: center
-    justify-content: center
-    background-color: $gray600
-    .container
-        max-width: 1312px
-    .title
-        text-align: left
-
-.video
-    padding-top: 60px
-    .container
-        max-width: 1312px
-    .title
-        margin-bottom: 50px
-    .video-container
-        padding: 80px 0
-        background-image: url("../images/video-bg.png")
-        background-repeat: no-repeat
-        background-size: cover
-        display: flex
-        align-items: center
-        justify-content: center
-    .video-wrap
-        width: 95%
-        max-width: 992px
-    .iframe-wrap
-        position: relative
-        padding-top: 56%
-    .iframe
-        width: 100%
-        height: 100%
-        position: absolute
-        top: 0
-        left: 0
-        border-radius: 16px
-
-.accurancy
-    padding: 22px 0 60px 0
-    .title
-        margin: 0 0 90px 96px
-    .cards
-        display: flex
-        justify-content: center
-        gap: 30px
-        flex-wrap: wrap
-    .card
-        width: 30%
-        flex-grow: 1
-        max-width: 480px
-        border: 1px solid $gray800
-        border-radius: 16px
-        padding: 20px 20px 14px 20px
-        display: flex
-        flex-direction: column
-    .card-bottom
-        margin-top: auto
-    .card-top
-        display: flex
-        justify-content: space-between
-        align-items: flex-start
-        gap: 15px
-    .card-bottom
-        margin-top: 20px
-    .card-title
-        line-height: 27px
-        margin-bottom: 6px
-    .card-subtitle
-        @media only screen and ( min-width: 2000px )
-            font-size: 20px
-    .card-accurancy
-        display: flex
-        flex-direction: column
-        align-items: flex-end
-        .percent
-            line-height: 35px
-            margin-bottom: 10px
-
-.patented
-    padding: 80px 0
-    position: relative
-    .ill
-        position: absolute
-        width: 220px
-        left: 0
-        top: 0
-    .container
-        display: flex
-        justify-content: space-between
-        align-items: center
-        max-width: 1200px
-    .btn 
-        position: relative
-        z-index: 1
-
-.marketes
-    position: relative
-    .marketes-bg
-        height: 520px
-        position: absolute
-        top: 77%
-        transform: translateY(-50%)
-        object-fit: cover
-    .container
-        width: 95%
-        max-width: 1248px
-        margin-top: 195px
-        margin-bottom: 130px
-    .title
-        margin-bottom: 45px
-    .cards
-        display: flex
-        justify-content: center
-        gap: 28px
-    .card
-        padding: 57px 48px 43px 60px
-        position: relative
-        border-radius: 24px
-        border-top-left-radius: 0px
-        max-width: 608px
-        display: flex
-        flex-direction: column
-        width: 45%
-        flex-grow: 1
-        &:last-child
-            background-color: $gray100
-    .card-descr
-        @media only screen and ( min-width: 2000px )
-            font-size: 20px
-    .card-top
-        width: 68px
-        position: absolute
-        top: 0
-        left: 0
-    .card-title
-         max-width: 420px
-    .card-subtitle
-        margin-bottom: 46px
-    .card-descr
-        &:last-child
-            margin-bottom: 76px
-    .btn
-        width: 100%
-        max-width: 400px
-        display: block
-        margin: auto auto 0 auto
-
-.partners
-    padding: 20px 0 158px 0
-    overflow: hidden
-    .title 
-        width: 90%
-        max-width: 1300px
-        margin: 0 auto 70px auto
-    .logo-ul
-        max-width: 1372px
-        width: 100%
-        margin: 0 auto
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-    .logo-li
-        width: 100%
-        max-width: 138px
-    .logo
-        max-height: 60px
-        object-fit: contain
-
-.privacy
-    padding: 135px 0 160px 0 
-    .title-wrapper
-        margin: 0 0 85px 72px
-    .privacy-ul
-        display: flex
-        justify-content: center
-        flex-wrap: wrap
-        gap: 80px
-    .privacy-li
-        display: flex
-        align-items: center
-        gap: 40px
-        width: 47%
-    .privacy-content
-        max-width: 472px
-    .content-descr
-        @media only screen and ( min-width: 2000px )
-            font-size: 20px
-    .content-title
-        margin-bottom: 5px 
-    .privacy-img
-        width: 96px  
-
-.patented
-    padding: 80px 0
-    position: relative
-    .ill
-        position: absolute
-        width: 220px
-        left: 0
-        top: 0
-    .right-bg
-        position: absolute
-        top: 0
-        right: 9px
-        width: 100%
-        max-width: 638px
-    .container
-        display: flex
-        justify-content: space-between
-        align-items: center
-        max-width: 1200px
-
-.subscriber
-    padding: 90px 0 0 0
-    overflow: hidden
-    background-color: $white
-    .container
-        margin: 0 0 0 206px
-    .hidden-lg
-        display: none
-    .subtitle
-        max-width: 1028px
-        line-height: 1.2
-        margin: 20px 0 80px 0
-    .cards-container
-        width: 100%
-        display: flex
-        @media only screen and ( min-width: 2000px )
-            height: 650px
-    .cards
-        width: 100%
-        display: flex
-        align-items: center
-    .cards-logo
-        width: 98px
-        display: inline-block
-        margin: 0 auto 40px auto
-    .card-1-wrapper
-        width: 32%
-        flex-grow: 1
-        position: relative
-        img
-            width: 100%
-    .card
-        width: 100%
-        max-width: 352px
-        display: flex
-        flex-direction: column
-        &.card-1
-            min-width: 272px
-            position: absolute
-            top: 50%
-            transform: translateY(-50%)
-            right: 32px
-            padding: 20px 100px 20px 25px
-            border-radius: 20px
-            background-color: rgba($white, 0.85)
-            border: 1px solid $grayLight
-            .cards-title
-                margin-bottom: 10px
-        &.card-2
-            width: 19%
-            min-width: 325px
-            flex-grow: 1
-            padding: 35px 65px 56px 65px
-            border-radius: 24px
-            @media only screen and (min-width: 1950px)
-                padding: 140px 65px 140px 65px
-            .cards-title
-                margin-bottom: 36px
-        &.card-3
-            width: 21.7%
-            margin-left: auto
-            padding: 28px 84px 42px 32px
-            border-radius: 20px
-            background-color: $white
-            border: 1px solid $grayLight
-            @media only screen and (min-width: 1950px)
-                padding: 128px 84px 142px 32px
-            .cards-title
-                margin-bottom: 24px
-            .marketes-li
-                margin-left: 20px
-                &:not(:last-child)
-                    margin-bottom: 32px 
-    .mid-img
-        width: 21.7%
-        flex-grow: 1
-    .right-img
-        width: 10.8%
-        flex-grow: 1
-    .content
-        line-height: 1.2
-    .profiles-wrap
-        display: flex    
-        flex-wrap: wrap
-        justify-content: center
-        gap: 36px
-    .user-icon
-        width: 40px
-        height: 40px
-                
-@media only screen and (max-width: 1685px)
-    .patented
-        .container
-            justify-content: center
-            gap: 182px
-
-@media only screen and (max-width: 1600px)
-    .subscriber
-        .cards-logo
-            width: 133px
-        .card
-            &.card-1
-                padding: 40px 20px 40px 20px
-            &.card-2
-                min-width: 272px
-                padding: 40px 41px 56px 41px
-                .cards-title
-                    width: 80%
-                    margin: 0 auto 24px auto
-            &.card-3
-                padding: 28px 24px 42px 24px
-        .mid-img
-            width: 17%
-        .right-img
-            width: 8%
-        .profiles-wrap
-            gap: 24px
-                
-@media only screen and (max-width: 1350px)
-    .subscriber
-        .card
-            &.card-1
-                max-width: 280px
-        .container
-            margin: 0 0 0 14vw
-        .subtitle
-            max-width: 90%
-
-@media only screen and (max-width: 1440px)
+.homepage
     .hero
+        min-height: 900px
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $gray600
         .container
-            max-width: 971px
+            max-width: 1312px
         .title
-            div:first-child
-                display: inline
+            text-align: left
 
     .video
+        padding-top: 60px
         .container
-            max-width: 1028px
-            padding: 0 20px 0 47px
+            max-width: 1312px
+        .title
+            margin-bottom: 50px
         .video-container
-            padding: 50px 0
+            padding: 80px 0
+            background-image: url("../images/video-bg.png")
+            background-repeat: no-repeat
+            background-size: cover
+            display: flex
+            align-items: center
+            justify-content: center
         .video-wrap
-            max-width: 772px
+            width: 95%
+            max-width: 992px
+        .iframe-wrap
+            position: relative
+            padding-top: 56%
+        .iframe
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            border-radius: 16px
 
     .accurancy
-        .container
-            max-width: 1170px
+        padding: 22px 0 60px 0
+        .title
+            margin: 0 0 90px 96px
         .cards
-            gap: 28px
+            display: flex
+            justify-content: center
+            gap: 30px
+            flex-wrap: wrap
+        .card
+            width: 30%
+            flex-grow: 1
+            max-width: 480px
+            border: 1px solid $gray800
+            border-radius: 16px
+            padding: 20px 20px 14px 20px
+            display: flex
+            flex-direction: column
+        .card-bottom
+            margin-top: auto
+        .card-top
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            gap: 15px
+        .card-bottom
+            margin-top: 20px
+        .card-title
+            line-height: 27px
+            margin-bottom: 6px
+        .card-subtitle
+            @media only screen and ( min-width: 2000px )
+                font-size: 20px
+        .card-accurancy
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+            .percent
+                line-height: 35px
+                margin-bottom: 10px
+
+    .patented
+        padding: 80px 0
+        position: relative
+        .ill
+            position: absolute
+            width: 220px
+            left: 0
+            top: 0
+        .container
+            display: flex
+            justify-content: space-between
+            align-items: center
+            max-width: 1200px
+        .btn 
+            position: relative
+            z-index: 1
 
     .marketes
+        position: relative
+        .marketes-bg
+            height: 520px
+            position: absolute
+            top: 77%
+            transform: translateY(-50%)
+            object-fit: cover
         .container
-            max-width: 1028px
-            margin-top: 160px
-            margin-bottom: 160px
+            width: 95%
+            max-width: 1248px
+            margin-top: 195px
+            margin-bottom: 130px
         .title
-            margin-bottom: 75px
-        .card
-            padding: 60px 60px 42px 60px
-            max-width: 500px
-
-    .privacy
-        padding: 110px 0 185px 0
-        .container
-            max-width: 1072px
-        .privacy-li
-            grid-gap: 35px
-            width: 45%
-        .privacy-content
-            max-width: 364px
-        .privacy-img
-            width: 72px  
-
-@media only screen and (max-width: 1180px)
-    .accurancy
-        padding: 70px 0 60px 0 
+            margin-bottom: 45px
         .cards
-            // max-width: 900px
-            margin: 0 auto
-        .title
-            margin-bottom: 35px
-            margin-left: 15px
-        .cards
-            gap: 15px
+            display: flex
+            justify-content: center
+            gap: 28px
         .card
+            padding: 57px 48px 43px 60px
+            position: relative
+            border-radius: 24px
+            border-top-left-radius: 0px
+            max-width: 608px
+            display: flex
+            flex-direction: column
             width: 45%
             flex-grow: 1
-            max-width: 100%
-            padding: 15px 20px
-        .card-top
-            margin-bottom: 6px
-
-    .marketes
-        .container
-            width: 100%
-            padding: 117px 20px
-            margin: 0 auto
-        .title
-            margin-left: 25px
-            margin-bottom: 50px
-            &::before
-                left: -25px
-        .card-title
-            font-size: 32px
-        .card-subtitle
-            font-size: 32px
-            margin-bottom: 20px
-        .btn
-            padding: 0 30px
-        .card-descr
-            font-size: 12px
             &:last-child
-                margin-bottom: 70px
+                background-color: $gray100
+        .card-descr
+            @media only screen and ( min-width: 2000px )
+                font-size: 20px
+        .card-top
+            width: 68px
+            position: absolute
+            top: 0
+            left: 0
+        .card-title
+            max-width: 420px
+        .card-subtitle
+            margin-bottom: 46px
+        .card-descr
+            &:last-child
+                margin-bottom: 76px
+        .btn
+            width: 100%
+            max-width: 400px
+            display: block
+            margin: auto auto 0 auto
 
     .partners
-        .title
-            margin-left: 48px
+        padding: 20px 0 158px 0
+        overflow: hidden
+        .title 
+            width: 90%
+            max-width: 1300px
+            margin: 0 auto 70px auto
         .logo-ul
-            max-width: 600px
-            gap: 60px
-            justify-content: center
+            max-width: 1372px
+            width: 100%
+            margin: 0 auto
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+        .logo-li
+            width: 100%
+            max-width: 138px
         .logo
-            max-width: 250px
+            max-height: 60px
+            object-fit: contain
+
+    .privacy
+        padding: 135px 0 160px 0 
+        .title-wrapper
+            margin: 0 0 85px 72px
+        .privacy-ul
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            gap: 80px
+        .privacy-li
+            display: flex
+            align-items: center
+            gap: 40px
+            width: 47%
+        .privacy-content
+            max-width: 472px
+        .content-descr
+            @media only screen and ( min-width: 2000px )
+                font-size: 20px
+        .content-title
+            margin-bottom: 5px 
+        .privacy-img
+            width: 96px  
 
     .patented
+        padding: 80px 0
+        position: relative
+        .ill
+            position: absolute
+            width: 220px
+            left: 0
+            top: 0
         .right-bg
-            display: none
-        .container
-            flex-direction: column
-            gap: 58px
-        .title
-            font-size: 44px
-            text-align: center
-            max-width: min-content
-
-    .subscriber 
-        .subtitle
-            margin: 20px 0 40px 0
-        .container
-            margin-left: 5vw
-        .hidden-lg
-            display: block
-        .left-img, .mid-img, .right-img
-            display: none
-        .left-mobile
-            width: 258px
-            height: 450px
-            object-fit: contain
-        .mid-mobile
-            max-width: 826px
-            position: relative
-            z-index: 2
-        .right-mobile
-            max-width: 326px
-        .cards
-            flex-direction: column
-            position: relative
-            overflow: hidden
-        .card-1-wrapper
+            position: absolute
+            top: 0
+            right: 9px
             width: 100%
+            max-width: 638px
+        .container
+            display: flex
+            justify-content: space-between
+            align-items: center
+            max-width: 1200px
+
+    .subscriber
+        padding: 90px 0 0 0
+        overflow: hidden
+        background-color: $white
+        .container
+            margin: 0 0 0 206px
+        .hidden-lg
+            display: none
+        .subtitle
+            max-width: 1028px
+            line-height: 1.2
+            margin: 20px 0 80px 0
+        .cards-container
+            width: 100%
+            display: flex
+            @media only screen and ( min-width: 2000px )
+                height: 650px
+        .cards
+            width: 100%
+            display: flex
+            align-items: center
+        .cards-logo
+            width: 98px
+            display: inline-block
+            margin: 0 auto 40px auto
+        .card-1-wrapper
+            width: 32%
+            flex-grow: 1
             position: relative
+            img
+                width: 100%
         .card
-            &.card-2, &.card-3
-                width: 100%
-                z-index: 2
-                position: relative
+            width: 100%
+            max-width: 352px
+            display: flex
+            flex-direction: column
             &.card-1
-                width: 100%
-                left: 50%
-                bottom: 40px
-                top: initial
-                transform: translateX(-50%)
-                max-width: 380px
-                padding: 20px
-                width: 100%
-                z-index: 2
-            &.card-2
-                max-width: 380px
-                .cards-title
-            &.card-3
-                margin-left: initial
                 min-width: 272px
-                max-width: 380px
-                padding: 24px 30px
+                position: absolute
+                top: 50%
+                transform: translateY(-50%)
+                right: 32px
+                padding: 20px 100px 20px 25px
+                border-radius: 20px
+                background-color: rgba($white, 0.85)
+                border: 1px solid $grayLight
+                .cards-title
+                    margin-bottom: 10px
+            &.card-2
+                width: 19%
+                min-width: 325px
+                flex-grow: 1
+                padding: 35px 65px 56px 65px
+                border-radius: 24px
+                @media only screen and (min-width: 1950px)
+                    padding: 140px 65px 140px 65px
+                .cards-title
+                    margin-bottom: 36px
+            &.card-3
+                width: 21.7%
+                margin-left: auto
+                padding: 28px 84px 42px 32px
+                border-radius: 20px
+                background-color: $white
+                border: 1px solid $grayLight
+                @media only screen and (min-width: 1950px)
+                    padding: 128px 84px 142px 32px
+                .cards-title
+                    margin-bottom: 24px
+                .marketes-li
+                    margin-left: 20px
+                    &:not(:last-child)
+                        margin-bottom: 32px 
+        .mid-img
+            width: 21.7%
+            flex-grow: 1
+        .right-img
+            width: 10.8%
+            flex-grow: 1
+        .content
+            line-height: 1.2
+        .profiles-wrap
+            display: flex    
+            flex-wrap: wrap
+            justify-content: center
+            gap: 36px
+        .user-icon
+            width: 40px
+            height: 40px
+                
+@media only screen and (max-width: 1685px)
+    .homepage
+        .patented
+            .container
+                justify-content: center
+                gap: 182px
+
+@media only screen and (max-width: 1600px)
+    .homepage
+        .subscriber
+            .cards-logo
+                width: 133px
+            .card
+                &.card-1
+                    padding: 40px 20px 40px 20px
+                &.card-2
+                    min-width: 272px
+                    padding: 40px 41px 56px 41px
+                    .cards-title
+                        width: 80%
+                        margin: 0 auto 24px auto
+                &.card-3
+                    padding: 28px 24px 42px 24px
+            .mid-img
+                width: 17%
+            .right-img
+                width: 8%
+            .profiles-wrap
+                gap: 24px
+                
+@media only screen and (max-width: 1350px)
+    .homepage
+        .subscriber
+            .card
+                &.card-1
+                    max-width: 280px
+            .container
+                margin: 0 0 0 14vw
+            .subtitle
+                max-width: 90%
+
+@media only screen and (max-width: 1440px)
+    .homepage
+        .hero
+            .container
+                max-width: 971px
             .title
-        .profiles-wrap 
-            gap: initial
-            grid-column-gap: 60px
-            grid-row-gap: 30px
+                div:first-child
+                    display: inline
+
+        .video
+            .container
+                max-width: 1028px
+                padding: 0 20px 0 47px
+            .video-container
+                padding: 50px 0
+            .video-wrap
+                max-width: 772px
+
+        .accurancy
+            .container
+                max-width: 1170px
+            .cards
+                gap: 28px
+
+        .marketes
+            .container
+                max-width: 1028px
+                margin-top: 160px
+                margin-bottom: 160px
+            .title
+                margin-bottom: 75px
+            .card
+                padding: 60px 60px 42px 60px
+                max-width: 500px
+
+        .privacy
+            padding: 110px 0 185px 0
+            .container
+                max-width: 1072px
+            .privacy-li
+                grid-gap: 35px
+                width: 45%
+            .privacy-content
+                max-width: 364px
+            .privacy-img
+                width: 72px  
+
+@media only screen and (max-width: 1180px)
+    .homepage
+        .accurancy
+            padding: 70px 0 60px 0 
+            .cards
+                margin: 0 auto
+            .title
+                margin-bottom: 35px
+                margin-left: 15px
+            .cards
+                gap: 15px
+            .card
+                width: 45%
+                flex-grow: 1
+                max-width: 100%
+                padding: 15px 20px
+            .card-top
+                margin-bottom: 6px
+
+        .marketes
+            .container
+                width: 100%
+                padding: 117px 20px
+                margin: 0 auto
+            .title
+                margin-left: 25px
+                margin-bottom: 50px
+                &::before
+                    left: -25px
+            .card-title
+                font-size: 32px
+            .card-subtitle
+                font-size: 32px
+                margin-bottom: 20px
+            .btn
+                padding: 0 30px
+            .card-descr
+                font-size: 12px
+                &:last-child
+                    margin-bottom: 70px
+
+        .partners
+            .title
+                margin-left: 48px
+            .logo-ul
+                max-width: 600px
+                gap: 60px
+                justify-content: center
+            .logo
+                max-width: 250px
+
+        .patented
+            .right-bg
+                display: none
+            .container
+                flex-direction: column
+                gap: 58px
+            .title
+                font-size: 44px
+                text-align: center
+                max-width: min-content
+
+        .subscriber 
+            .subtitle
+                margin: 20px 0 40px 0
+            .container
+                margin-left: 5vw
+            .hidden-lg
+                display: block
+            .left-img, .mid-img, .right-img
+                display: none
+            .left-mobile
+                width: 258px
+                height: 450px
+                object-fit: contain
+            .mid-mobile
+                max-width: 826px
+                position: relative
+                z-index: 2
+            .right-mobile
+                max-width: 326px
+            .cards
+                flex-direction: column
+                position: relative
+                overflow: hidden
+            .card-1-wrapper
+                width: 100%
+                position: relative
+            .card
+                &.card-2, &.card-3
+                    width: 100%
+                    z-index: 2
+                    position: relative
+                &.card-1
+                    width: 100%
+                    left: 50%
+                    bottom: 40px
+                    top: initial
+                    transform: translateX(-50%)
+                    max-width: 380px
+                    padding: 20px
+                    width: 100%
+                    z-index: 2
+                &.card-2
+                    max-width: 380px
+                    .cards-title
+                &.card-3
+                    margin-left: initial
+                    min-width: 272px
+                    max-width: 380px
+                    padding: 24px 30px
+                .title
+            .profiles-wrap 
+                gap: initial
+                grid-column-gap: 60px
+                grid-row-gap: 30px
 
 @media only screen and (max-width: 992px)
-    .title
-        font-size: 32px
-    
-    .hero
-        .container
-            padding: 0 20px 0 40px
-            div
-                display: inline
-
-    .video
-        padding-top: 30px
+    .homepage
         .title
             font-size: 32px
-            margin-bottom: 23px
-        .video-container
-            padding: 26px 0
-        .video-wrap
-            width: 90%
-    
-    .marketes
-        .marketes-bg
-            display: none
-        .card-top
-            width: 50px
-        .card
-            padding: 60px 40px 40px 40px
-            min-height: 500px
+        
+        .hero
+            .container
+                padding: 0 20px 0 40px
+                div
+                    display: inline
 
-    .privacy
-        padding: 66px 0 80px 0
-        .title-wrapper
-            margin: 0 0 50px 15px
-        .privacy-content
-            max-width: 500px
-        .privacy-ul
-            flex-direction: column
-            align-items: center
-            gap: 24px
-        .privacy-li
-            gap: 35px
-            align-items: flex-start
-            width: 100%
-            max-width: 600px
+        .video
+            padding-top: 30px
+            .title
+                font-size: 32px
+                margin-bottom: 23px
+            .video-container
+                padding: 26px 0
+            .video-wrap
+                width: 90%
+        
+        .marketes
+            .marketes-bg
+                display: none
+            .card-top
+                width: 50px
+            .card
+                padding: 60px 40px 40px 40px
+                min-height: 500px
+
+        .privacy
+            padding: 66px 0 80px 0
+            .title-wrapper
+                margin: 0 0 50px 15px
+            .privacy-content
+                max-width: 500px
+            .privacy-ul
+                flex-direction: column
+                align-items: center
+                gap: 24px
+            .privacy-li
+                gap: 35px
+                align-items: flex-start
+                width: 100%
+                max-width: 600px
 
 @media only screen and (max-width: 767px)
-    .hero
-        background-image: url("../images/hero-mobile-bg.svg")
-        background-repeat: no-repeat
-        background-position: center
-        .hero-bg
-            display: none
+    .homepage
+        .hero
+            background-image: url("../images/hero-mobile-bg.svg")
+            background-repeat: no-repeat
+            background-position: center
+            .hero-bg
+                display: none
 
-    .accurancy 
-        .cards
-            gap: 10px
-        .card
-            padding: 15px 10px
-            display: flex
-            &:not(:last-child) 
-                .card-top
-                    flex-direction: column
-                    flex-grow: 1
-                .card-subtitle
-                    // min-height: 60px
-                .card-title
-                    // min-height: 56px
-                .card-name
-                    // min-height: 160px
-        .card-accurancy
-            align-items: flex-start
-        .card-bottom
-            margin-top: 10px
+        .accurancy 
+            .cards
+                gap: 10px
+            .card
+                padding: 15px 10px
+                display: flex
+                &:not(:last-child) 
+                    .card-top
+                        flex-direction: column
+                        flex-grow: 1
+                    .card-subtitle
+                        // min-height: 60px
+                    .card-title
+                        // min-height: 56px
+                    .card-name
+                        // min-height: 160px
+            .card-accurancy
+                align-items: flex-start
+            .card-bottom
+                margin-top: 10px
 
-    .marketes
-        .cards
-            flex-direction: column
-            align-items: center
-        .card
-            width: 100%
+        .marketes
+            .cards
+                flex-direction: column
+                align-items: center
+            .card
+                width: 100%
 
-    .patented
-        background-image: url("../images/patent-mobile-bg.svg")
-        background-size: contain
-        .ill
-            display: none
-        
-    .privacy
-        .title
-            margin-right: 30px
-            padding-left: 12px
+        .patented
+            background-image: url("../images/patent-mobile-bg.svg")
+            background-size: contain
+            .ill
+                display: none
+            
+        .privacy
+            .title
+                margin-right: 30px
+                padding-left: 12px
 
 
 @media only screen and (max-width: 450px)
-    .hero
-        background-position: initial
+    .homepage
+        .hero
+            background-position: initial
 
-    .subscriber
-        .container  
-            margin-left: initial
-            .title
-                max-width: 80%
-                margin-left: 27px
-            .subtitle
-                line-height: 1.4
-        .cards
-            padding: 0 40px
-        .card
-            &.card-2
-                padding: 40px 52px 56px 52px
+        .subscriber
+            .container  
+                margin-left: initial
                 .title
-                    font-size: 22px
-            &.card-3
-                .title
-                    font-size: 22px
+                    max-width: 80%
+                    margin-left: 27px
+                .subtitle
+                    line-height: 1.4
+            .cards
+                padding: 0 40px
+            .card
+                &.card-2
+                    padding: 40px 52px 56px 52px
+                    .title
+                        font-size: 22px
+                &.card-3
+                    .title
+                        font-size: 22px
+            
+            .left-mobile
+                height: 300px
+            
+            .profiles-wrap
+                grid-column-gap: initial
+                grid-row-gap: initial
+                gap: 24px
         
-        .left-mobile
-            height: 300px
-        
-        .profiles-wrap
-            grid-column-gap: initial
-            grid-row-gap: initial
-            gap: 24px
-    
-    .partners
-        .logo-ul
-            gap: 30px
-        .logo-li
-            width: 40%
+        .partners
+            .logo-ul
+                gap: 30px
+            .logo-li
+                width: 40%

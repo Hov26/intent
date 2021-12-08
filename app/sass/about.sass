@@ -1,19 +1,27 @@
 .about-page
+    padding-top: 100px
+    background: $gray600
 
     .about-container
         width: 100%
         padding: 0 208px
 
     .hero
+        overflow: hidden
+        display: flex
+        justify-content: center
+        align-items: center
         .about
             width: 56%
             flex-grow: 1
             padding: 0 60px 0 208px
+            position: relative
+            z-index: 1
         .title
             margin-bottom: 40px
         .paragraph
             max-width: 735px 
-            line-height: 1.3
+            line-height: 1.4
         .about-img
             width: 44%
         .figure-container
@@ -42,15 +50,17 @@
             background-image: url("../images/about-gray-bg.png") 
             background-repeat: no-repeat
             background-size: cover
+        .for-arrows
+            display: none
         .title
-            margin-bottom: 120px
+            margin: 0 0 120px 70px
         .arrow-wrapper
             display: none
         .advisors-items
             gap: 160px
         .item
             width: 23%
-            // max-width: 352px 
+            min-width: 272px
             position: relative
             .about-red62
                 width: 62px
@@ -176,16 +186,13 @@
 
 @media only screen and (max-width: 1440px)
     .about-page
-        .hero
-            .about
-                margin: 20px 95px 20px 9vw 
 
         .advisors
-            padding-bottom: 160px  
-            .container
-                max-width: 1200px 
-            .item
-                max-width: 270px  
+            padding: 60px 0 80px 0
+            .for-arrows
+                display: flex
+            .advisors-items
+                gap: 128px
 
         .management    
             .container
@@ -214,6 +221,14 @@
 
 @media only screen and (max-width: 1280px)  
     .about-page
+        .about-container
+            padding: 0 40px
+
+        .hero
+            .about
+                padding: 0 40px
+
+
         .advisors
             .container
                 width: 100%
@@ -236,11 +251,26 @@
                 margin-right: 45px 
                         
 
-@media only screen and (max-width: 992px)
+@media only screen and (max-width: 1180px)
+    .about-page
+        .advisors
+            &::before
+                top: 300px
+            .title
+                margin: 0 0 28px 70px
+            .for-arrows
+                margin: 0 0 32px 50px
+                .owl-next
+                    margin-left: 50px
+            .item  
+                width: 100%
+        
+
+@media only screen and (max-width: 1100px)
     .about-page
         .hero
             .about 
-                margin: 20px 30px 20px 5vw   
+                // margin: 20px 30px 20px 5vw   
             .title
                 font-size: 32px
                 margin-bottom: 28px
@@ -249,7 +279,7 @@
 
         .advisors
             .item  
-                min-width: 300px          
+                // min-width: 300px          
 
         .management
             .container
@@ -272,24 +302,31 @@
                 .logo-wrapper
                     flex-wrap: wrap
 
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 992px)
     .about-page
         .hero
             flex-direction: column
+            .about, .about-img
+                width: 100%
+            .about
+                padding: 53px 30px 40px 30px
+
+@media only screen and (max-width: 768px)
+    .about-page
+        .title
+            font-size: 32px
+        .hero
             .about 
-                margin: 50px 20px 40px 20px
-                width: 84%
+                // margin: 50px 20px 40px 20px
+                // width: 84%
             .paragraph
                 font-size: 24px
             .about-img
                 width: 100% 
 
         .advisors
-            padding: 80px 0 70px 0
-            background-position: 0 280px
             .container
                 .title
-                    font-size: 32px
                     margin-bottom: 0
                 .arrow-wrapper
                     display: block
@@ -310,7 +347,6 @@
                 height: 63px
             .container 
                 .title 
-                    font-size: 32px 
                     margin-bottom: 35px
                     margin-left: 25px  
                 .management-items-wrapper
@@ -328,7 +364,6 @@
         .team
             .container
                 .title
-                    font-size: 32px
                     margin-left: 20px
                 .arrow-wrapper
                     display: block
@@ -350,3 +385,19 @@
                     gap: 20px
                     .logo
                         max-width: 130px
+
+
+@media only screen and (max-width: 767px)
+    .about-page
+        .advisors
+            padding: 60px 0
+            &::before
+                top: 250px
+            .title
+                margin: 0 0 28px 0px
+            .for-arrows
+                margin: 0 0 32px -19px
+                .owl-next
+                    margin-left: 0
+            .item  
+                // width: 100%

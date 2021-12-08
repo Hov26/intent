@@ -51,6 +51,28 @@ $(document).ready(function () {
     },
   });
 
+  if ($(window).width() <= 1180) {
+    $(".advisors .advisors-slider").addClass("owl-carousel");
+  }
+
+  $(".advisors-slider").owlCarousel({
+    dots: true,
+    nav: false,
+    navElement: "div",
+    margin: 0,
+    autoplay: false,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 24,
+      },
+      768: {
+        items: 2,
+        margin: 80,
+      },
+    },
+  });
+
   var arrows = $(".owl-nav");
 
   $(".for-arrows").append(arrows);
