@@ -1,0 +1,352 @@
+.about-page
+
+    .about-container
+        width: 100%
+        padding: 0 208px
+
+    .hero
+        .about
+            width: 56%
+            flex-grow: 1
+            padding: 0 60px 0 208px
+        .title
+            margin-bottom: 40px
+        .paragraph
+            max-width: 735px 
+            line-height: 1.3
+        .about-img
+            width: 44%
+        .figure-container
+            width: 100%
+        .figure
+            position: relative
+            padding-top: 83%
+        .img 
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    .advisors
+        position: relative
+        padding: 60px 0 130px 0
+        &::before
+            content: ""
+            width: 100%
+            height: 300px
+            position: absolute
+            top: 170px
+            left: 0
+            background-image: url("../images/about-gray-bg.png") 
+            background-repeat: no-repeat
+            background-size: cover
+        .title
+            margin-bottom: 120px
+        .arrow-wrapper
+            display: none
+        .advisors-items
+            gap: 160px
+        .item
+            width: 23%
+            // max-width: 352px 
+            position: relative
+            .about-red62
+                width: 62px
+                height: 62px
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 1
+            .figure
+                position: relative
+                padding-top: 120%
+                .img
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            .title
+                margin: 25px 0 10px 0
+            .paragraph
+                margin-bottom: 4px
+
+    .management
+        padding-top: 85px
+        position: relative
+        margin-bottom: 330px
+        .management-red117
+            width: 117px
+            height: 117px
+            position: absolute
+            top: 0
+            left: 0
+        .container
+            .title
+                margin-bottom: 60px
+                margin-left: 100px
+            .management-items-wrapper
+                gap: 158px
+                .item
+                    width: 100%
+                    max-width: 354px
+                    margin-bottom: -150px
+                    .figure
+                        position: relative
+                        padding-top: 118.6%
+                        .img
+                            position: absolute
+                            top: 0
+                            left: 0
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+                    .item-title
+                        margin: 28px 0 8px 0
+
+    .team 
+        padding: 100px 0 90px 0
+        .container
+            .title
+                margin-left: 70px
+            .arrow-wrapper
+                display: none
+            .team-items-wrapper
+                flex-wrap: wrap
+                .item
+                    margin-right: 114px
+                    margin-top: 50px
+                    width: 20%
+                    max-width: 256px
+                    .figure
+                        position: relative
+                        padding-top: 125%
+                        .img
+                            position: absolute
+                            top: 0
+                            left: 0
+                            width: 100%
+                            height: 100%
+                            object-fit: cover
+                    .item-title
+                        margin: 25px 0 10px 0
+
+    .partners
+        padding: 125px 0 100px 0
+        .container
+            .title
+                margin-bottom: 60px
+                margin-left: 70px
+            .logo-wrapper
+                gap: 32px
+                .logo 
+                    width: 100%
+                    max-width: 224px
+                    .figure
+                        position: relative
+                        padding-top: 44.64%
+                        .img
+                            position: absolute
+                            top: 0
+                            left: 0
+                            width: 100%
+                            height: 100%
+                            object-fit: contain
+
+@media only screen and (max-width: 1660px)
+    .about-page
+
+        .about-container
+            padding: 0 134px
+
+        .hero
+            .about
+                padding: 0 134px
+
+        .team
+            .container
+                .team-items-wrapper
+                    .item
+                        margin-right: 100px
+                        max-width: 200px
+
+
+@media only screen and (max-width: 1440px)
+    .about-page
+        .hero
+            .about
+                margin: 20px 95px 20px 9vw 
+
+        .advisors
+            padding-bottom: 160px  
+            .container
+                max-width: 1200px 
+            .item
+                max-width: 270px  
+
+        .management    
+            .container
+                max-width: 1200px 
+                .management-items-wrapper
+                    .item
+                        max-width: 272px
+                        margin-bottom: -120px
+                        .figure
+                            padding-top: 146.3%       
+
+        .team 
+            padding-bottom: 150px  
+            .container
+                max-width: 1200px
+
+        .partners
+            padding: 160px 0 200px 0
+            .container
+                max-width: 1200px
+                .logo-wrapper
+                    gap: 28px
+                    .logo
+                        max-width: 172px
+
+
+@media only screen and (max-width: 1280px)  
+    .about-page
+        .advisors
+            .container
+                width: 100%
+                padding-right: 0
+                padding-left: 35px
+            .advisors-items
+                overflow: hidden
+                .item
+                    .about-red62
+                        width: 48px
+                        height: 48px
+        
+        .management
+            .container
+                .management-items-wrapper
+                    gap: 90px
+
+        .team 
+            .item
+                margin-right: 45px 
+                        
+
+@media only screen and (max-width: 992px)
+    .about-page
+        .hero
+            .about 
+                margin: 20px 30px 20px 5vw   
+            .title
+                font-size: 32px
+                margin-bottom: 28px
+            .paragraph
+                font-size: 14px
+
+        .advisors
+            .item  
+                min-width: 300px          
+
+        .management
+            .container
+                .management-items-wrapper
+                    .item
+                        margin-bottom: -160px
+
+        .team 
+            padding: 60px 0 
+            .container
+                .team-items-wrapper
+                    flex-wrap: nowrap   
+                    overflow: hidden
+                    .item
+                        min-width: 252px
+
+        .partners
+            padding: 80px 0 45px 0
+            .container
+                .logo-wrapper
+                    flex-wrap: wrap
+
+@media only screen and (max-width: 768px)
+    .about-page
+        .hero
+            flex-direction: column
+            .about 
+                margin: 50px 20px 40px 20px
+                width: 84%
+            .paragraph
+                font-size: 24px
+            .about-img
+                width: 100% 
+
+        .advisors
+            padding: 80px 0 70px 0
+            background-position: 0 280px
+            .container
+                .title
+                    font-size: 32px
+                    margin-bottom: 0
+                .arrow-wrapper
+                    display: block
+                    margin: 40px 0 40px 10px
+                    .arrow
+                        max-width: 62px
+                        margin-right: 27px
+                .advisors-items
+                    .item
+                        .figure
+                            padding-top: 131.7%
+                        
+        .management
+            padding-top: 60px
+            margin-bottom: 0
+            .management-red117
+                width: 63px
+                height: 63px
+            .container 
+                .title 
+                    font-size: 32px 
+                    margin-bottom: 35px
+                    margin-left: 25px  
+                .management-items-wrapper
+                    flex-direction: column
+                    align-items: center
+                    gap: 0
+                    .item
+                        min-width: 302px
+                        margin-bottom: 50px
+                        .item-title
+                            color: $white
+                        .item-paragraph
+                            color: $white
+                  
+        .team
+            .container
+                .title
+                    font-size: 32px
+                    margin-left: 20px
+                .arrow-wrapper
+                    display: block
+                    margin: 30px 0 30px 25px
+                    .arrow
+                        max-width: 62px
+                        margin-right: 27px
+                .team-items-wrapper
+                    .item
+                        margin: 0 40px
+
+        .partners
+            .container
+                .title
+                    font-size: 32px
+                    margin-left: 30px
+                    margin-bottom: 20px
+                .logo-wrapper
+                    gap: 20px
+                    .logo
+                        max-width: 130px
