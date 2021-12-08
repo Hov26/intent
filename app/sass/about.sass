@@ -1,6 +1,20 @@
+@import "partners-section.sass"
+    
 .about-page
     padding-top: 100px
-    background: $gray600
+    position: relative
+    overflow: hidden
+    &::before
+        content: ""
+        width: 150%
+        height: 1000px
+        background: $gray600
+        position: absolute
+        top: -100px
+        left: -100px
+
+    .for-arrows
+        display: none
 
     .about-container
         width: 100%
@@ -29,13 +43,6 @@
         .figure
             position: relative
             padding-top: 83%
-        .img 
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
-            object-fit: cover
 
     .advisors
         position: relative
@@ -50,8 +57,6 @@
             background-image: url("../images/about-gray-bg.png") 
             background-repeat: no-repeat
             background-size: cover
-        .for-arrows
-            display: none
         .title
             margin: 0 0 120px 70px
         .arrow-wrapper
@@ -62,30 +67,23 @@
             width: 23%
             min-width: 272px
             position: relative
-            .about-red62
-                width: 62px
-                height: 62px
-                position: absolute
-                top: 0
-                left: 0
-                z-index: 1
-            .figure
-                position: relative
-                padding-top: 120%
-                .img
-                    position: absolute
-                    top: 0
-                    left: 0
-                    width: 100%
-                    height: 100%
-                    object-fit: cover
             .title
                 margin: 25px 0 10px 0
             .paragraph
                 margin-bottom: 4px
+        .about-red62
+            width: 62px
+            height: 62px
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 1
+        .figure
+            position: relative
+            padding-top: 120%
 
     .management
-        padding-top: 85px
+        padding: 85px 0 0 0
         position: relative
         margin-bottom: 330px
         .management-red117
@@ -94,55 +92,37 @@
             position: absolute
             top: 0
             left: 0
-        .container
-            .title
-                margin-bottom: 60px
-                margin-left: 100px
-            .management-items-wrapper
-                gap: 158px
-                .item
-                    width: 100%
-                    max-width: 354px
-                    margin-bottom: -150px
-                    .figure
-                        position: relative
-                        padding-top: 118.6%
-                        .img
-                            position: absolute
-                            top: 0
-                            left: 0
-                            width: 100%
-                            height: 100%
-                            object-fit: cover
-                    .item-title
-                        margin: 28px 0 8px 0
+        .title
+            margin-bottom: 60px
+            margin-left: 100px
+        .management-items-wrapper
+            gap: 158px
+        .item
+            width: 23.5%
+            min-width: 272px
+            margin-bottom: -150px
+        .figure
+            position: relative
+            padding-top: 118.6%
+        .item-title
+            margin: 28px 0 8px 0
 
     .team 
         padding: 100px 0 90px 0
-        .container
-            .title
-                margin-left: 70px
-            .arrow-wrapper
-                display: none
-            .team-items-wrapper
-                flex-wrap: wrap
-                .item
-                    margin-right: 114px
-                    margin-top: 50px
-                    width: 20%
-                    max-width: 256px
-                    .figure
-                        position: relative
-                        padding-top: 125%
-                        .img
-                            position: absolute
-                            top: 0
-                            left: 0
-                            width: 100%
-                            height: 100%
-                            object-fit: cover
-                    .item-title
-                        margin: 25px 0 10px 0
+        .title
+            margin: 0 0 52px 70px
+        .arrow-wrapper
+            display: none
+        .team-items-wrapper
+            flex-wrap: wrap
+            gap: 128px
+        .item
+            width: 17%
+        .figure
+            position: relative
+            padding-top: 125%
+        .item-title
+            margin: 25px 0 10px 0
 
     .partners
         padding: 125px 0 100px 0
@@ -176,38 +156,23 @@
             .about
                 padding: 0 134px
 
-        .team
-            .container
-                .team-items-wrapper
-                    .item
-                        margin-right: 100px
-                        max-width: 200px
-
 
 @media only screen and (max-width: 1440px)
     .about-page
 
         .advisors
             padding: 60px 0 80px 0
-            .for-arrows
-                display: flex
             .advisors-items
                 gap: 128px
 
-        .management    
-            .container
-                max-width: 1200px 
-                .management-items-wrapper
-                    .item
-                        max-width: 272px
-                        margin-bottom: -120px
-                        .figure
-                            padding-top: 146.3%       
+        .management
+            .management-items-wrapper
+                gap: 128px
 
         .team 
             padding-bottom: 150px  
-            .container
-                max-width: 1200px
+            .team-items-wrapper
+                gap: 100px
 
         .partners
             padding: 160px 0 200px 0
@@ -221,6 +186,8 @@
 
 @media only screen and (max-width: 1280px)  
     .about-page
+        .hero-bg
+            height: 40%
         .about-container
             padding: 0 40px
 
@@ -230,56 +197,61 @@
 
 
         .advisors
-            .container
-                width: 100%
-                padding-right: 0
-                padding-left: 35px
-            .advisors-items
-                overflow: hidden
-                .item
-                    .about-red62
-                        width: 48px
-                        height: 48px
+            .about-red62
+                width: 48px
+                height: 48px
         
         .management
-            .container
-                .management-items-wrapper
-                    gap: 90px
+            .item
+                margin-bottom: -180px
 
         .team 
+            .team-items-wrapper
+                gap: 80px
             .item
-                margin-right: 45px 
+                width: 25%
                         
 
 @media only screen and (max-width: 1180px)
     .about-page
+
+        .for-arrows
+            display: flex
+            margin: 0 0 32px 50px
+
         .advisors
             &::before
                 top: 300px
             .title
                 margin: 0 0 28px 70px
-            .for-arrows
-                margin: 0 0 32px 50px
                 .owl-next
                     margin-left: 50px
             .item  
                 width: 100%
         
+        .management
+            padding: 85px 0 54px 0
+            margin-bottom: 0
+            .management-items-wrapper
+                gap: 80px
+                flex-wrap: wrap
+            .item
+                margin-bottom: 0
+                width: 45%
+                color: $white
+
+        .team
+            .item
+                width: 100%
 
 @media only screen and (max-width: 1100px)
     .about-page
         .hero
-            .about 
-                // margin: 20px 30px 20px 5vw   
             .title
                 font-size: 32px
                 margin-bottom: 28px
             .paragraph
-                font-size: 14px
-
-        .advisors
-            .item  
-                // min-width: 300px          
+                font-size: 14px      
 
         .management
             .container
@@ -291,8 +263,8 @@
             padding: 60px 0 
             .container
                 .team-items-wrapper
-                    flex-wrap: nowrap   
-                    overflow: hidden
+                    // flex-wrap: nowrap   
+                    // overflow: hidden
                     .item
                         min-width: 252px
 
@@ -306,6 +278,8 @@
     .about-page
         .hero
             flex-direction: column
+            .hero-bg
+                height: 10%
             .about, .about-img
                 width: 100%
             .about
@@ -313,31 +287,15 @@
 
 @media only screen and (max-width: 768px)
     .about-page
+
         .title
             font-size: 32px
+
         .hero
-            .about 
-                // margin: 50px 20px 40px 20px
-                // width: 84%
             .paragraph
                 font-size: 24px
             .about-img
                 width: 100% 
-
-        .advisors
-            .container
-                .title
-                    margin-bottom: 0
-                .arrow-wrapper
-                    display: block
-                    margin: 40px 0 40px 10px
-                    .arrow
-                        max-width: 62px
-                        margin-right: 27px
-                .advisors-items
-                    .item
-                        .figure
-                            padding-top: 131.7%
                         
         .management
             padding-top: 60px
@@ -395,9 +353,19 @@
                 top: 250px
             .title
                 margin: 0 0 28px 0px
+            .advisors-slider
+                max-width: 500px
             .for-arrows
                 margin: 0 0 32px -19px
                 .owl-next
                     margin-left: 0
-            .item  
-                // width: 100%
+
+        .management
+            .title
+                margin-left: 30px
+                margin-bottom: 30px
+            .management-items-wrapper
+                max-width: 500px
+                gap: 36px
+            .item
+                width: 100%

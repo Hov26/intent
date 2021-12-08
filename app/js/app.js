@@ -53,9 +53,27 @@ $(document).ready(function () {
 
   if ($(window).width() <= 1180) {
     $(".advisors .advisors-slider").addClass("owl-carousel");
+    $(".team .team-slider").addClass("owl-carousel");
   }
 
-  $(".advisors-slider").owlCarousel({
+  $(".advisors-slider.owl-carousel").owlCarousel({
+    dots: true,
+    nav: false,
+    navElement: "div",
+    margin: 0,
+    autoplay: false,
+    responsive: {
+      0: {
+        items: 1,
+        margin: 24,
+      },
+      768: {
+        items: 2,
+        margin: 80,
+      },
+    },
+  });
+  $(".team-slider.owl-carousel").owlCarousel({
     dots: true,
     nav: false,
     navElement: "div",
@@ -74,8 +92,12 @@ $(document).ready(function () {
   });
 
   var arrows = $(".owl-nav");
+  var arrows1 = $(".advisors .owl-nav");
+  var arrows2 = $(".team .owl-nav");
 
-  $(".for-arrows").append(arrows);
+  $(".for-arrows.testimonials-arrows").append(arrows);
+  $(".for-arrows.advisors-arrows").append(arrows1);
+  $(".for-arrows.team-arrows").append(arrows2);
 
   $(".hero-with-animation").mousemove(function (event) {
     var moveX = ($(window).width() / 2 - event.pageX) * 0.01;
@@ -84,13 +106,7 @@ $(document).ready(function () {
     $(".hero-bg").css("margin-top", moveY + "px");
   });
 
-  // get menu dropdown height
-  // var dropdownHeight = $("ul.dropdown").outerHeight();
-  // $("ul.dropdown").css("bottom", "-" + dropdownHeight + "px");
-
-  // $(window).resize(function () {
-  //   $("ul.dropdown").css("bottom", "-" + dropdownHeight + "px");
-  // });
+  // $(window).resize(function () {});
 
   // Open mobile menu
   $(".burger").click(function () {
