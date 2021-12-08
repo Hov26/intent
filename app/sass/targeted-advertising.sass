@@ -1,0 +1,212 @@
+.product-page
+    padding-top: 100px
+    background-color: $gray600
+    .product-container
+        width: 100%
+        padding: 0 208px
+        justify-content: space-between
+
+    .product-hero
+        display: flex
+        justify-content: flex-end
+        overflow: hidden
+        .content
+            position: relative
+            z-index: 2
+            width: 50%
+            flex-grow: 1
+            display: flex
+            flex-direction: column
+            justify-content: center
+            padding: 0 128px 0 208px
+        .title
+            margin-bottom: 40px
+        .figure-container
+            width: 40%
+            display: flex
+            flex-grow: 1
+        .figure
+            position: relative
+            padding-top: 82%
+            width: 100%
+    .target
+        padding: 85px 0
+        position: relative
+        .squares-bg
+            position: absolute
+            top: 50%
+            left: -120px
+            transform: translateY(-50%)
+            width: 100%
+            max-width: 720px
+        .product-container
+            display: flex
+            gap: 175px
+        .content
+            width: 45%
+        .target-bg
+            position: absolute
+            z-index: -1
+            left: -200px
+            top: 45%
+            transform: translateY(-50%)
+            width: 600px
+        .figure-container
+            width: 38.4%
+            max-width: 608px
+        .figure
+            position: relative    
+            width: 100%
+            padding-top: 95%
+        .section-title
+            margin-bottom: 60px
+            max-width: 560px
+            left: -10px
+            &::before
+                top: 2px
+                left: -12px
+        .target-ul
+            display: flex
+            flex-direction: column
+            padding-left: 40px
+            gap: 24px
+            max-width: 520px
+    
+    .ensuring
+        padding: 85px 0
+        .product-container
+            display: flex
+            gap: 195px
+        .figure-container
+            display: flex
+            width: 49%
+            max-width: 736px
+        .figure
+            position: relative
+            width: 100%
+            padding-top: 68%
+        .title.fz50
+            margin-bottom: 60px
+        .ensuring-ul
+            display: flex
+            flex-direction: column
+            gap: 24px
+            padding-left: 40px
+            max-width: 502px
+
+@media only screen and (max-width: 1600px)
+    .product-page
+        .product-container
+            padding: 0 134px
+        .product-hero
+            .content
+                padding: 0 134px
+
+
+@media screen and (max-width: 1440px)
+    .product-page
+        .target
+            .squares-bg
+                max-height: 400px
+                top: 46%
+                object-fit: cover
+            .product-container
+                gap: 128px
+                .title.fz50
+                    margin-bottom: 37px 
+            .figure-container
+                max-width: 700px
+                margin: 0 auto  
+
+        .ensuring
+            .product-container
+                gap: 30px
+            .figure-container
+                max-width: 700px
+                margin: 0 auto
+
+@media screen and (max-width: 1300px)
+    .product-page
+        .product-container
+            padding: 0 60px
+
+        .target
+            .squares-bg
+                max-height: 300px
+                top: 43%
+
+@media screen and (max-width: 1100px)
+    .product-page
+        .section-title
+            font-size: 32px
+
+        .product-hero
+            flex-direction: column
+            .content, .figure-container
+                width: 100%
+            .content
+                padding: 100px 60px
+
+        .target
+            padding: 60px 0
+            .squares-bg
+                display: none
+            .product-container
+                flex-direction: column-reverse
+                gap: 24px
+                padding: 0 24px
+                width: 100%
+            .content, .figure-container
+                width: 100%
+            .content
+                padding-left: 20px
+                max-width: 520px
+                margin: 0 auto
+            .section-title
+                margin-bottom: 28px
+                padding-left: 10px
+                max-width: 310px
+            .target-ul
+                padding-left: 0px
+            .title.fz20
+                font-size: 20px
+            .target-bg
+                top: 70%
+                width: 100%
+            .figure
+                padding-top: 110%
+
+        .ensuring
+            padding: 60px 0
+            .product-container
+                flex-direction: column
+                gap: 24px  
+                padding: 0 24px
+                width: 100%
+            .ensuring-content
+                margin: 0 auto
+                padding-left: 20px
+            .ensuring-ul
+                padding-left: 0px 
+            .title.fz20
+                font-size: 20px 
+            .figure-container
+                width: 100%
+                .figure
+                    padding-top: 110%   
+    
+
+@media screen and (max-width: 992px)
+    .product-page
+        .product-hero
+            .content
+                padding: 53px 24px 40px 24px
+            .page-name
+                margin-bottom: 16px
+            .title
+                margin-bottom: 28px
+            .subtitle
+                font-size: 24px
+        .ensuring
+            padding-bottom: 60px
+            
