@@ -35,6 +35,17 @@
             width: 62.5%
             padding: 50px 0
             justify-content: flex-end   
+            position: relative
+            .white-dots
+                position: absolute
+                width: 100%
+                max-width: 290px
+                &.left
+                    bottom: 0
+                    left: 0
+                &.right
+                    top: 0
+                    right: 0
             .question
                 width: 100%
                 max-width: 992px  
@@ -42,6 +53,9 @@
         .form-container
             width: 37.5%
             padding: 50px  0 50px 0 
+            background-image: url("../images/patent-right-bg.svg")
+            background-repeat: no-repeat
+            background-size: cover
             .form
                 width: 100%
                 max-width: 340px
@@ -128,6 +142,11 @@
                             font-size: 36px 
         
         .questions
-            display: none 
+            flex-direction: column
+            .question-container, .form-container
+                width: 100%
+                background-image: none
+                .white-dots
+                    display: none
 
                                          
