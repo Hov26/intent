@@ -4,6 +4,8 @@
     .hero
         min-height: 360px
         padding: 50px 0 50px 0
+        .hero-bg
+            height: 50%
         .container
             max-width: 1440px
 
@@ -11,23 +13,22 @@
         padding: 100px 0 190px 0
         position: relative
         z-index: 2
-        .container
-            .contact-info-wrapper
-                justify-content: space-between
-                gap: 30px
-                margin-top: 60px
-                .contact-info
-                    border: 1px solid 
-                    border-color: $gray800 
-                    border-radius: 16px
-                    width: 100%
-                    max-width: 735px
-                    padding: 30px 30px 45px 30px
-            .text
-                max-width: 1280px
-                margin-left: 6vw
-                .title
-                    margin-bottom: 25px
+        .contact-info-wrapper
+            justify-content: space-between
+            gap: 30px
+            margin-top: 60px
+        .contact-info
+            border: 1px solid 
+            border-color: $gray800 
+            border-radius: 16px
+            width: 100%
+            max-width: 735px
+            padding: 30px 30px 45px 30px
+        .text
+            max-width: 1280px
+            margin-left: 6vw
+            .title
+                margin-bottom: 25px
 
     .questions 
         min-height: 360px
@@ -36,34 +37,34 @@
             padding: 50px 0
             justify-content: flex-end   
             position: relative
-            .white-dots
-                position: absolute
-                width: 100%
-                max-width: 290px
-                &.left
-                    bottom: 0
-                    left: 0
-                &.right
-                    top: 0
-                    right: 0
-            .question
-                width: 100%
-                max-width: 992px  
-                padding-left: 60px  
+        .white-dots
+            position: absolute
+            width: 100%
+            max-width: 290px
+            &.left
+                bottom: 0
+                left: 0
+            &.right
+                top: 0
+                right: 0
+        .question
+            width: 100%
+            max-width: 992px  
+            padding-left: 60px  
         .form-container
             width: 37.5%
             padding: 50px  0 50px 0 
             background-image: url("../images/patent-right-bg.svg")
             background-repeat: no-repeat
             background-size: cover
-            .form
-                width: 100%
-                max-width: 340px
-                padding-left: 60px
-                .image
-                    margin-top: 16px
-                    width: 100%
-                    max-width: 340px
+        .form
+            width: 100%
+            max-width: 340px
+            padding-left: 60px
+        .image
+            margin-top: 16px
+            width: 100%
+            max-width: 340px
 
 
 
@@ -79,9 +80,8 @@
                 max-width: 1170px
         
         .questions 
-            .question-container
-                .question
-                    max-width: 770px
+            .question
+                max-width: 770px
 
 
 
@@ -114,12 +114,17 @@
         .questions
             .form-container
                 .form
-                    width: 90%   
+                    width: 90%
 
 @media only screen and (max-width: 768px)
     .contact-page
         .hero
             align-items: flex-start
+            background-image: url("../images/hero-mobile-bg.svg")
+            background-repeat: no-repeat
+            background-size: cover
+            .hero-bg
+                display: none
             .title
                 font-size: 32px 
 
