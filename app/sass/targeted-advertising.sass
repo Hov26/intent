@@ -153,11 +153,13 @@
                 display: none
             .product-container
                 flex-direction: column-reverse
-                gap: 40px
+                gap: initial
                 padding: 0 24px
                 width: 100%
             .content, .figure-container
                 width: 100%
+            .figure-container
+                margin-top: 40px
             .content
                 padding-left: 20px
                 max-width: 520px
@@ -210,3 +212,12 @@
         .ensuring
             padding-bottom: 60px
             
+
+@media only screen and (max-width: 767px)
+    .product-page
+        .product-hero
+            background-image: url("../images/hero-mobile-bg.svg")
+            background-repeat: no-repeat
+            background-size: cover
+            .hero-bg
+                display: none

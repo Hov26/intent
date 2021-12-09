@@ -12,6 +12,7 @@
         position: absolute
         top: -100px
         left: -100px
+        z-index: -1
 
     .for-arrows
         display: none
@@ -245,6 +246,10 @@
                 color: $white
 
         .team
+            .title
+                margin: 0 0 52px 0
+            .for-arrows
+                margin: 0 0 32px -16px
             .item
                 width: 100%
 
@@ -265,18 +270,8 @@
 
         .team 
             padding: 60px 0 
-            .container
-                .team-items-wrapper
-                    // flex-wrap: nowrap   
-                    // overflow: hidden
-                    .item
-                        min-width: 252px
-
-        .partners
-            padding: 80px 0 45px 0
-            .container
-                .logo-wrapper
-                    flex-wrap: wrap
+            .item
+                min-width: 252px
 
 @media only screen and (max-width: 992px)
     .about-page
@@ -307,35 +302,30 @@
             .management-red117
                 width: 63px
                 height: 63px
-            .container 
-                .title 
-                    margin-bottom: 35px
-                    margin-left: 25px  
-                .management-items-wrapper
-                    flex-direction: column
-                    align-items: center
-                    gap: 0
-                    .item
-                        min-width: 302px
-                        margin-bottom: 50px
-                        .item-title
-                            color: $white
-                        .item-paragraph
-                            color: $white
+            .title 
+                margin-bottom: 35px
+                margin-left: 25px  
+            .management-items-wrapper
+                flex-direction: column
+                align-items: center
+                gap: 0
+                .item
+                    min-width: 302px
+                    margin-bottom: 50px
+                    .item-title
+                        color: $white
+                    .item-paragraph
+                        color: $white
                   
         .team
-            .container
-                .title
-                    margin-left: 20px
-                .arrow-wrapper
-                    display: block
-                    margin: 30px 0 30px 25px
-                    .arrow
-                        max-width: 62px
-                        margin-right: 27px
-                .team-items-wrapper
-                    .item
-                        margin: 0 40px
+            .title
+                margin-left: 20px
+            .arrow-wrapper
+                display: block
+                margin: 30px 0 30px 25px
+                .arrow
+                    max-width: 62px
+                    margin-right: 27px
 
         .partners
             .container
@@ -351,14 +341,18 @@
 
 @media only screen and (max-width: 767px)
     .about-page
+        .hero
+            background-image: url("../images/hero-mobile-bg.svg")
+            background-repeat: no-repeat
+            background-size: cover
+            .hero-bg
+                display: none
         .advisors
             padding: 60px 0
             &::before
                 top: 250px
             .title
                 margin: 0 0 28px 0px
-            .advisors-slider
-                // max-width: 500px
             .for-arrows
                 margin: 0 0 32px -19px
                 .owl-next
@@ -369,7 +363,6 @@
                 margin-left: 30px
                 margin-bottom: 30px
             .management-items-wrapper
-                // max-width: 500px
                 gap: 36px
             .item
                 width: 100%
