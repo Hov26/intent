@@ -605,3 +605,131 @@
                 grid-column-gap: initial
                 grid-row-gap: initial
                 gap: 24px
+
+
+.testimonials
+    position: relative
+    padding: 85px 0 100px 0
+    &::before
+        content: ""
+        height: 595px
+        width: 100%
+        background-color: $black
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 1
+    .container
+        position: relative
+        z-index: 2
+
+    .for-arrows
+        width: 100%
+        max-width: 352px
+        margin: 35px 0 45px 0
+    .red-icon
+        position: absolute
+        top: 0
+        left: 0
+        width: 117px
+        z-index: 2
+    .home-carousel
+        .owl-dots
+            display: none
+                
+    .item
+        position: relative
+    .figure-wrapper
+        width: 100%
+    .figure 
+        position: relative
+        padding-top: 113%
+    .item-img
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        object-fit: cover
+    .item-red-icon
+        max-width: 62px
+        position: absolute
+        top: 0
+        left: 0
+    .name
+        margin: 32px 0 8px 0
+    .position
+        margin-bottom: 24px
+
+
+
+.owl-nav
+    display: flex
+    justify-content: space-between
+    .owl-prev, .owl-next
+        width: 100px
+        height: 25px
+        background-repeat: no-repeat
+        background-position: center
+        cursor: pointer
+
+
+.testimonials
+    .owl-nav
+        .owl-prev
+            background-image: url("../images/arrow-left.svg")
+        .owl-next
+            background-image: url("../images/arrow-right.svg")
+
+.black-arrows
+    .owl-nav
+        .owl-prev
+            background-image: url("../images/arrow-left-black.svg")
+        .owl-next
+            background-image: url("../images/arrow-right-black.svg")
+
+@media only screen and (max-width: 1660px)
+    .testimonials
+        &::before
+            height: 500px
+        .container
+            max-width: 1172px
+            width: 85%
+        .item
+            max-width: initial
+        .for-arrows
+            max-width: 272px
+
+@media only screen and (max-width: 1400px)
+    .testimonials
+        &::before
+            height: 45vw
+        .item
+            max-width: initial
+
+@media only screen and (max-width: 999px)
+    .testimonials
+        &::before
+            height: 63vw
+
+@media only screen and (max-width: 700px)
+    .testimonials
+        padding: 58px 0 100px 0
+        .title, .for-arrows
+            margin-left: 40px
+        .container
+            width: 100%
+        &::before
+            height: 100vw
+        .title
+            font-size: 32px
+        .red-icon
+            width: 62px
+        .for-arrows
+            max-width: 200px
+            min-width: initial
+
+@media only screen and (max-width: 500px)
+    .testimonials
+        &::before
+            height: 135vw

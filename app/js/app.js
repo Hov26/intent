@@ -7,7 +7,7 @@ $(document).ready(function () {
     }
   });
 
-  //bondo
+  // toggle job card
   $(".job-card").click(function () {
     if ($(this).hasClass("opened")) {
       $(this).removeClass("opened");

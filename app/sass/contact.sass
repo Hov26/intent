@@ -148,10 +148,23 @@
         
         .questions
             flex-direction: column
+            .question-container
+                min-height: 300px
+            .white-dots
+                width: 136px
+                &.left
+                    top: 0
+                    left: 0
+                    bottom: initial
+                &.right
+                    bottom: 0
+                    right: 0
+                    top: initial
             .question-container, .form-container
                 width: 100%
-                background-image: none
-                .white-dots
-                    display: none
+            .form-container
+                min-height: 250px
+                background-image: url('../images/patent-mobile-bg.svg')
+                background-size: cover
 
                                          
