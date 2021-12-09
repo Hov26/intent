@@ -32,7 +32,7 @@
     .job-card
         width: 100%
         max-width: 1250px
-        padding: 24px 72px 24px 65px
+        padding: 23px 72px 23px 65px
         border: 1px solid $gray300
         border-radius: 16px
         cursor: pointer
@@ -61,5 +61,47 @@
     .job-body
         display: none
         padding: 15px 0 37px 0
-        .body-content:not(:last-child)
+        .body-content-wrapper:not(:last-child)
             margin-bottom: 30px
+        .content-ul
+            margin-bottom: 30px
+            .content-li
+                margin-bottom: 8px
+                position: relative
+                padding-left: 32px
+                &::before
+                    content: ""
+                    width: 10px
+                    height: 10px
+                    background-color: $red
+                    position: absolute
+                    left: 0px
+                    top: 6px
+                    border-radius: 50px
+                
+@media screen and ( max-width: 1440px )
+    .careers
+        .container
+            max-width: 1150px
+
+@media screen and ( max-width: 1050px )
+    .careers
+        .container
+            padding: 0 20px
+        .jobs
+            padding: 56px 0
+            .job-card
+                padding: 20px
+            .job-header
+                font-size: 20px
+                margin-left: 30px
+                &::before
+                    top: 6px
+            .body-content-wrapper, .content-li
+                font-size: 16px
+            .body-content-wrapper:not(:last-child)
+                margin-bottom: 20px
+            .content-ul
+                .content-li
+                    padding-left: 22px
+        
