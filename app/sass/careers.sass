@@ -22,6 +22,39 @@
             right: 0
             .team-img
                 width: 500px
+
+    .perks
+        padding: 60px 0 135px 0
+        position: relative
+        .bg-fill
+            position: absolute
+            width: 291px
+        .fill-1
+            left: 0
+            bottom: 67px
+        .fill-2 
+            right: 0
+            bottom: 0
+        .title
+            margin: 0 0 60px 20px
+        .perks-cards
+            display: flex
+            gap: 26px
+            justify-content: center
+        .card
+            width: 280px
+            height: 270px
+            padding: 40px 38px
+            display: flex
+            flex-direction: column
+            align-items: center
+            border-radius: 20px
+            z-index: 1
+        .card-icon
+            width: 72px
+            margin-bottom: 30px
+        .card-descr
+            text-align: center
         
 .jobs
     .container
@@ -83,11 +116,46 @@
     .careers
         .container
             max-width: 1150px
+        
+    .perks
+        .container
+            .perks-cards
+                gap: 17px
+            .card
+                padding: 40px 10px
 
-@media screen and ( max-width: 1050px )
+@media screen and ( max-width: 1100px )
     .careers
         .container
             padding: 0 20px
+        
+        .perks
+            padding: 74px 0 55px 0
+            .bg-fill
+                width: 136px
+            .fill-1
+                top: 135px
+            .fill-2
+                top: 50%
+                transform: translateY(-50%)
+            .container
+                padding: 0 20px
+            .title
+                margin-bottom: 35px
+            .perks-cards
+                flex-direction: column
+                gap: 20px
+                align-items: center
+            .card
+                max-width: 265px
+                height: 180px
+                padding: 20px 10px
+            .card-icon
+                margin-bottom: 12px
+            .card-descr
+                font-size: 20px
+            
+            
         .jobs
             padding: 56px 0
             .job-card
