@@ -58,12 +58,15 @@
     .label
         padding: 120px 0
         position: relative
+        .label-container-wrap
+            position: relative
         .bg
             position: absolute
             left: 0
-            top: 327px 
-            height: 520px
-            width: 400px
+            top: 50%
+            transform: translateY(-50%)
+            width: 100%
+            max-width: 35vw
         .container
             max-width: 1480px
         .title
@@ -74,16 +77,9 @@
             max-width: 736px
         .figure
             position: relative
-            padding-top: 78.53%
-        .img
-            position: absolute
-            top: 0
-            left: 0
-            width: 100%
-            height: 100%
-            object-fit: cover
+            padding-top: 100%
         .content
-            padding: 40px 30px 30px 160px
+            padding: 24px 0 0 160px
             width: 50%
         .ul-title
             max-width: 470px
@@ -131,10 +127,12 @@
             padding-bottom: 250px
             .container
                 max-width: 1180px
+            .content-wrapper
+                align-items: center
             .figure
-                padding-top: 98.9%
+                // padding-top: 98.9%
             .content
-                padding: 25px 0 30px 130px
+                padding: 0 0 0 130px
 
 // @media only screen and (max-width: 1280px) 
 
