@@ -1,28 +1,29 @@
 .careers
-    .hero
-        position: relative
-        .container
+    .product-hero
+        display: flex
+        justify-content: flex-end
+        overflow: hidden
+        .content
+            position: relative
+            z-index: 2
+            width: 50%
+            flex-grow: 1
             display: flex
-            align-items: center
-            margin-left: auto
-            gap: 128px
-        .left-side
-            width: 100%
-            max-width: 745px
-        .title
-            margin-bottom: 70px
-            margin-left: 25px
-        .subtitle
+            flex-direction: column
+            justify-content: center
+            padding: 0 128px 0 208px
+        .sub
             margin-bottom: 10px
-        .descr
-            line-height: 24px
-        .right-side
-            position: absolute
-            top: 0
-            right: 0
-            .team-img
-                width: 500px
-
+        .section-title
+            margin: 0 0 70px 20px
+        .figure-container
+            width: 38.4%
+            display: flex
+            flex-grow: 1
+        .figure
+            position: relative
+            padding-top: 82.4%
+            width: 100%
     .perks
         padding: 60px 0 135px 0
         position: relative
@@ -113,11 +114,17 @@
                     left: 0px
                     top: 6px
                     border-radius: 50px
-                
+
+
+
+
 @media screen and ( max-width: 1440px )
     .careers
         .container
             max-width: 1150px
+        .product-hero
+            .content
+                padding: 0 96px 0 110px
         
     .perks
         .container
@@ -125,11 +132,23 @@
                 gap: 17px
             .card
                 padding: 40px 10px
-
+@media screen and ( max-width: 1300px )
+    .careers
+        .product-hero
+            .section-title
+                margin-bottom: 28px
+    
 @media screen and ( max-width: 1100px )
     .careers
         .container
             padding: 0 20px
+        
+        .product-hero
+            flex-direction: column
+            .content, .figure-container
+                width: 100%
+            .content
+                padding: 100px 60px
         
         .perks
             padding: 74px 0 55px 0
@@ -175,3 +194,8 @@
                 .content-li
                     padding-left: 22px
         
+@media screen and ( max-width: 992px )
+    .careers
+        .product-hero
+            .content
+                padding: 40px 20px
