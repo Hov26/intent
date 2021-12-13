@@ -51,6 +51,8 @@ $(document).ready(function () {
     },
   });
 
+  
+
   var arrows = $(".owl-nav");
 
   $(".for-arrows").append(arrows);
@@ -60,6 +62,15 @@ $(document).ready(function () {
     var moveY = ($(window).height() / 2 - event.pageY) * 0.01;
     $(".hero-bg").css("margin-left", moveX + "px");
     $(".hero-bg").css("margin-top", moveY + "px");
+  });
+
+  //careers-hero-slider
+  $(".careers-hero-slider").owlCarousel({
+    dots: true,
+    nav: false,
+    navElement: "div",
+    items: 1,
+    autoplay: true,
   });
 
   // get menu dropdown height

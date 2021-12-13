@@ -16,10 +16,33 @@
             margin-bottom: 10px
         .section-title
             margin: 0 0 70px 20px
-        .figure-container
+        .careers-hero-slider
             width: 38.4%
             display: flex
             flex-grow: 1
+            position: relative
+            .owl-dots
+                display: block
+                width: 100px
+                height: 20px
+                position: absolute
+                bottom: 20px
+                left: 50%
+                transform: translateX(-50%)
+                display: flex
+                justify-content: center
+                align-items: center
+                .owl-dot
+                    width: 12px
+                    height: 12px
+                    background-color: $white
+                    display: inline-block
+                    border-radius: 50% 
+                    opacity: .5
+                    &.active
+                        opacity: .9
+                    &+.owl-dot
+                        margin-left: 6px
         .figure
             position: relative
             padding-top: 82.4%
@@ -44,8 +67,7 @@
             justify-content: center
         .card
             width: 280px
-            height: 270px
-            padding: 40px 38px
+            padding: 40px 38px 21px 38px
             display: flex
             flex-direction: column
             align-items: center
@@ -74,13 +96,12 @@
         cursor: pointer
         margin: 0 auto
         &.opened 
-            .job-body
-                display: block
+            .job-body-wrapper
+                max-height: 1000px
             .job-header
                 &::before
                     transform: rotate(225deg)
-                    transition: 500ms ease
-                //heighti harc@
+            
 
     .job-header
         position: relative
@@ -93,27 +114,30 @@
             top: 10px
             left: -30px
             transform: rotate(135deg)
-            transition: 500ms ease
+            transition: all 800ms ease
+    .job-body-wrapper
+        max-height: 0
+        transition: all 500ms ease
+        overflow: hidden
     .job-body
-        display: none
         padding: 15px 0 37px 0
         .body-content-wrapper:not(:last-child)
             margin-bottom: 30px
         .content-ul
             margin-bottom: 30px
-            .content-li
-                margin-bottom: 8px
-                position: relative
-                padding-left: 32px
-                &::before
-                    content: ""
-                    width: 10px
-                    height: 10px
-                    background-color: $red
-                    position: absolute
-                    left: 0px
-                    top: 6px
-                    border-radius: 50px
+        .content-li
+            margin-bottom: 8px
+            position: relative
+            padding-left: 32px
+            &::before
+                content: ""
+                width: 10px
+                height: 10px
+                background-color: $red
+                position: absolute
+                left: 0px
+                top: 6px
+                border-radius: 50px
 
 
 
@@ -131,7 +155,7 @@
             .perks-cards
                 gap: 17px
             .card
-                padding: 40px 10px
+                padding: 40px 10px 21px 10px
 @media screen and ( max-width: 1300px )
     .careers
         .product-hero
@@ -155,8 +179,10 @@
             .bg-fill
                 width: 136px
             .fill-1
+                bottom: initial
                 top: 135px
             .fill-2
+                bottom: initial
                 top: 50%
                 transform: translateY(-50%)
             .container
@@ -164,13 +190,13 @@
             .title
                 margin-bottom: 35px
             .perks-cards
-                flex-direction: column
+                flex-wrap: wrap
                 gap: 20px
                 align-items: center
             .card
                 max-width: 265px
                 height: 180px
-                padding: 20px 10px
+                padding: 20px 17px
             .card-icon
                 margin-bottom: 12px
             .card-descr
