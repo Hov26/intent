@@ -108,7 +108,33 @@
             max-width: 372px 
             width: 100% 
             padding: 20px 40px 
-        
+
+    .ensuring
+        padding: 80px 0 165px 0
+        .container
+            max-width: 1480px
+            position: relative
+        .bg-img
+            position: absolute
+            right: 140px
+            top: -80px
+            max-width: 290px
+            object-fit: cover
+        .title
+            margin-bottom: 130px
+        .items-wrapper
+            gap: 235px
+        .item
+            gap: 50px
+            width: 100%
+            max-width: 535px
+        .figure-wrapper
+            width: 100%
+            max-width: 125px
+        .figure
+            position: relative
+            padding-top: 100% 
+            
             
 
 @media only screen and (max-width: 1440px)
@@ -144,6 +170,12 @@
                 align-items: center
             .content
                 padding: 0 0 0 130px
+
+        .ensuring
+            .container
+                max-width: 1180px
+            .items-wrapper
+                gap: 70px
 
 @media only screen and (max-width: 1280px)
     .product-credibility-page
@@ -236,6 +268,23 @@
             .list
                 color: $white
 
+        .ensuring
+            padding: 40px 0 50px 0
+            .bg-img
+                max-width: 135px
+                top: 40px
+                left: 0
+            .title
+                margin-left: 20px
+                margin-bottom: 40px
+            .items-wrapper
+                flex-direction: column
+                gap: 40px
+            .item
+                gap: 20px
+                z-index: 1
+                margin-left: 10px
+
 @media only screen and (max-width: 768px)
     .product-credibility-page
         .hero
@@ -264,4 +313,10 @@
             .list
                 font-size: 16px
             
-                
+        .ensuring
+            .title
+                font-size: 32px
+            .paragraph
+                font-size: 20px  
+            .figure-wrapper
+                max-width: 77px      
