@@ -135,7 +135,55 @@
             position: relative
             padding-top: 100% 
             
-            
+    .graphic
+        padding: 75px 0 150px 0
+        .container
+            max-width: 1480px
+        .top-items-wrapper
+            gap: 195px
+            margin-bottom: 32px
+        .item
+            padding: 40px 60px
+            width: 100%
+            max-width: 370px
+            border-radius: 24px
+            text-align: center
+            position: relative
+        .red-circle
+            height: 33px
+            width: 33px
+            border-radius: 50%
+            margin-bottom: 52px
+        .item-left::after 
+            content: ""
+            height: 101px
+            width: 2px
+            background-color: $black
+            display: block
+            position: absolute
+            right: -40px
+            bottom: -66px
+            transform: rotate(-60deg)
+        .item-right::after
+            content: ""
+            height: 101px
+            width: 2px
+            background-color: $black
+            display: block
+            position: absolute
+            left: -40px
+            bottom: -66px
+            transform: rotate(60deg)
+        .iten-bottom::after
+            content: ""
+            height: 52px
+            width: 2px
+            background-color: $red
+            display: block
+            position: absolute
+            top: -52px
+            left: 50%
+        
 
 @media only screen and (max-width: 1440px)
     .product-credibility-page
@@ -285,6 +333,15 @@
                 z-index: 1
                 margin-left: 10px
 
+        .graphic
+            padding: 60px 0 90px 0
+            .top-items-wrapper
+                gap: 25px
+            .item-left::after   
+                right: 45px
+            .item-right::after 
+                left: 45px
+
 @media only screen and (max-width: 768px)
     .product-credibility-page
         .hero
@@ -319,4 +376,11 @@
             .paragraph
                 font-size: 20px  
             .figure-wrapper
-                max-width: 77px      
+                max-width: 77px   
+
+        .graphic
+            .item
+                padding: 25px 20px  
+            .paragraph
+                font-size: 16px
+                font-weight: 500
